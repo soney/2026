@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  
+  <title>UIST 2026 - UIST Archive</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Cache-control" content="public" />
+  <meta http-equiv="content-type" content="text/html" />
+  <link rel="icon" href="/2026/favicon.ico?v=3" type="image/x-icon" />
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous" defer></script> -->
+  <link rel="stylesheet" href="/2026/assets/style.css?v=2" />
+  <script src="/2026/assets/js/color-modes.js"></script>
+</head>
+
+<body>
+
+  <a class="sr-only sr-only-focusable" href="#main-content">Skip to main content</a>
+
+<!-- DEBUG: page.url = '/archive/' -->
+<nav class="navbar fixed-top navbar-expand-lg" id="myTopnav">
+    <div class="container ">
+        <a class="navbar-brand nav-link " href="/2026/"><img
+                src="/2026/assets/images/uist_26_logo.png" id="navbar-logo"
+                data-light-src="/2026/assets/images/uist_26_logo_light_bg.png"
+                data-dark-src="/2026/assets/images/uist_26_logo.png" alt="UIST 2026 Home"
+                style="height: 45px" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav nav nav-underline ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link " href="/2026/cfp">Full CFP</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="/2026/sponsors">For
+                        Sponsors</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link "
+                        href="/2026/organizers">Organizers</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        More Info
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="/2026/archive/">UIST Archive</a></li>
+                        <li><a class="dropdown-item" href="/2025/">Previous Year (UIST 2025)</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <button class="nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center" id="bd-theme"
+                        type="button" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static"
+                        aria-label="Toggle theme (auto)">
+                        <i class="fas fa-circle-half-stroke my-1 theme-icon-active"></i>
+                        <span class="d-lg-none ms-2" id="bd-theme-text">Toggle theme</span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
+                        <li class="dropdown-item" data-bs-theme-value="light" aria-pressed="false">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-sun me-2 opacity-50 theme-icon" data-theme-icon="fa-sun"></i>
+                                Light
+                                <i class="fas fa-check ms-auto d-none"></i>
+                            </div>
+                        </li>
+                        <li class="dropdown-item" data-bs-theme-value="dark" aria-pressed="false">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-moon me-2 opacity-50 theme-icon" data-theme-icon="fa-moon"></i>
+                                Dark
+                                <i class="fas fa-check ms-auto d-none"></i>
+                            </div>
+                        </li>
+                        <li class="dropdown-item" data-bs-theme-value="auto" aria-pressed="true">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-circle-half-stroke me-2 opacity-50 theme-icon"
+                                    data-theme-icon="fa-circle-half-stroke"></i>
+                                Auto
+                                <i class="fas fa-check ms-auto d-none"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<!-- <div class="logo-area" style="height: 200px;">
+  <div class="logo-bg"></div>
+</div> -->
+<div class="logo-area" style="height: 0px;">
+  <div class="logo-bg"></div>
+</div>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.min.js" defer></script>
+<script src="/2026/assets/js/subCanvas.js" defer></script> -->
+
+
+
+<main id="main-content" class="container ">
+  
+<!-- # <i class="fa-solid fa-box-archive"></i> UIST Archive -->
+
+<h1 id="uist-archive">UIST Archive</h1>
+
+<p><br /></p>
+
+<!-- - This line needed for rendering table of contents/scrollspy.
+{:toc} -->
+
+<p>Please also see the <a href="https://uist.acm.org/archive/">main archive</a>
+and <a href="https://uist.acm.org/archive/uist2.0/">20th anniversary</a> UIST sites.</p>
+
+<p><br /></p>
+
+<h2 id="uist-history">UIST History</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>Location</th>
+      <th>Program Chairs</th>
+      <th>General Chairs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://uist.acm.org/2025/">2025</a></td>
+      <td>Busan, Korea</td>
+      <td>Andrea Bianchi / Wendy Mackay / Shengdong Zhao / Elena Glassman</td>
+      <td>Ian Oakley / Jeeeun Kim</td>
+    </tr>
+    <tr>
+      <td><a href="https://uist.acm.org/2024/">2024</a></td>
+      <td>Pittsburgh, PA, USA</td>
+      <td>Alexandra Ion / Pedro Lopes</td>
+      <td>Lining Yao / Mayank Goel</td>
+    </tr>
+    <tr>
+      <td><a href="https://uist.acm.org/2023/">2023</a></td>
+      <td>San Fransisco, CA, USA</td>
+      <td>Nathalie Henry Riche / Jürgen Steimle</td>
+      <td>Sean Follmer / Jeff Han</td>
+    </tr>
+    <tr>
+      <td><a href="https://uist.acm.org/uist2022/">2022</a></td>
+      <td>Bend, OR, USA</td>
+      <td>Eytan Adar / Vidya Setlur</td>
+      <td>Maneesh Agrawala / Jacob Wobbrock</td>
+    </tr>
+    <tr>
+      <td><a href="https://uist.acm.org/uist2021/">2021</a></td>
+      <td>Virtual Event</td>
+      <td>Ranjitha Kumar / Michael Nebeling</td>
+      <td>Jeff Nichols</td>
+    </tr>
+    <tr>
+      <td><a href="https://uist.acm.org/uist2020/">2020</a></td>
+      <td>Virtual Event</td>
+      <td>Fanny Chevalier / Stefanie Mueller</td>
+      <td>Shamsi Iqbal / Karon MacLean</td>
+    </tr>
+    <tr>
+      <td><a href="https://uist.acm.org/uist2019/">2019</a></td>
+      <td>New Orleans, LA, USA</td>
+      <td>Michael Bernstein / Katharina Reinecke</td>
+      <td>François Guimbretière</td>
+    </tr>
+    <tr>
+      <td><a href="https://uist.acm.org/uist2018/">2018</a></td>
+      <td>Berlin, Germany</td>
+      <td>Andy Wilson</td>
+      <td>Patrick Baudisch / Albrecht Schmidt</td>
+    </tr>
+    <tr>
+      <td><a href="https://uist.acm.org/uist2017/">2017</a></td>
+      <td>Quebec City, Canada</td>
+      <td>Jennifer Mankoff / Chris Harrison</td>
+      <td>Krzysztof Gajos</td>
+    </tr>
+    <tr>
+      <td><a href="https://uist.acm.org/uist2016/">2016</a></td>
+      <td>Tokyo, Japan</td>
+      <td>Jacob O. Wobbrock / Daniel Avrahami</td>
+      <td>Jun Rekimoto / Takeo Igarashi</td>
+    </tr>
+    <tr>
+      <td><a href="https://uist.acm.org/uist2015/">2015</a></td>
+      <td>Charlotte, NC, USA</td>
+      <td>Bjoern Hartmann / Tovi Grossman</td>
+      <td>Celine Latulipe</td>
+    </tr>
+    <tr>
+      <td><a href="https://uist.acm.org/uist2014/">2014</a></td>
+      <td>Honolulu, Hawaii, USA</td>
+      <td>Mira Dontcheva / Daniel Wigdor</td>
+      <td>Hrvoje Benko</td>
+    </tr>
+    <tr>
+      <td><a href="https://uist.acm.org/uist2013/">2013</a></td>
+      <td>St. Andrews, UK</td>
+      <td>Ivan Poupyrev / Takeo Igarashi</td>
+      <td>Shahram Izadi / Aaron Quigley</td>
+    </tr>
+    <tr>
+      <td><a href="https://uist.acm.org/uist2012/">2012</a></td>
+      <td>Cambridge, MA, USA</td>
+      <td>Hrvoje Benko / Celine Latulipe</td>
+      <td>Rob Miller</td>
+    </tr>
+    <tr>
+      <td><a href="https://uist.acm.org/uist2011/">2011</a></td>
+      <td>Santa Barbara, CA, USA</td>
+      <td>Maneesh Agrawala / Scott Klemmer</td>
+      <td>Jeff Pierce</td>
+    </tr>
+    <tr>
+      <td><a href="https://uist.acm.org/uist2010/">2010</a></td>
+      <td>New York, NY, USA</td>
+      <td>Mary Czerwinski / Rob Miller</td>
+      <td>Ken Perlin</td>
+    </tr>
+    <tr>
+      <td><a href="https://uist.acm.org/uist2009/">2009</a></td>
+      <td>Victoria, BC, Canada</td>
+      <td>François Guimbretière</td>
+      <td>Andrew D. Wilson</td>
+    </tr>
+    <tr>
+      <td><a href="https://uist.acm.org/uist2008/">2008</a></td>
+      <td>Monterey, CA, USA</td>
+      <td>Michel Beaudouin-Lafon</td>
+      <td>Steve Cousins</td>
+    </tr>
+    <tr>
+      <td><a href="https://uist.acm.org/uist2007/">2007</a></td>
+      <td>Newport, RI, USA</td>
+      <td>Ravin Balakrishnan</td>
+      <td>Chia Shen / Rob Jacob</td>
+    </tr>
+    <tr>
+      <td><a href="https://uist.acm.org/uist2006/">2006</a></td>
+      <td>Montreux, Switzerland</td>
+      <td>Ken Hinckley</td>
+      <td>Pierre Wellner</td>
+    </tr>
+    <tr>
+      <td><a href="https://uist.acm.org/uist2005/">2005</a></td>
+      <td>Seattle, WA, USA</td>
+      <td>Dan Olsen</td>
+      <td>Patrick Baudisch / Mary Czerwinski</td>
+    </tr>
+    <tr>
+      <td><a href="https://uist.acm.org/uist2004/">2004</a></td>
+      <td>Santa Fe, New Mexico, USA</td>
+      <td>James Landay</td>
+      <td>Steve Feiner</td>
+    </tr>
+    <tr>
+      <td><a href="https://uist.acm.org/uist2003/">2003</a></td>
+      <td>Vancouver, BC, Canada</td>
+      <td>Gregory Abowd / Blair MacIntyre</td>
+      <td>Joseph A. Konstan</td>
+    </tr>
+    <tr>
+      <td><a href="https://uist.acm.org/uist2002/">2002</a></td>
+      <td>Paris, France</td>
+      <td>Keith Edwards</td>
+      <td>Michel Beaudouin-Lafon</td>
+    </tr>
+    <tr>
+      <td><a href="https://uist.acm.org/uist2001/">2001</a></td>
+      <td>Orlando, FL, USA</td>
+      <td>Beth Mynatt</td>
+      <td>Joe Marks</td>
+    </tr>
+    <tr>
+      <td><a href="https://uist.acm.org/uist2000/">2000</a></td>
+      <td>San Diego, CA, USA</td>
+      <td>Scott Hudson</td>
+      <td>Mark Ackerman / Keith Edwards</td>
+    </tr>
+    <tr>
+      <td><a href="https://uist.acm.org/uist1999/">1999</a></td>
+      <td>Asheville, NC, USA</td>
+      <td>Joe Marks</td>
+      <td>Brad Vander Zanden</td>
+    </tr>
+    <tr>
+      <td><a href="https://uist.acm.org/uist1998/">1998</a></td>
+      <td>San Francisco, CA, USA</td>
+      <td>Rob Jacob</td>
+      <td>Elizabeth Mynatt</td>
+    </tr>
+    <tr>
+      <td><a href="https://uist.acm.org/uist1997/">1997</a></td>
+      <td>Banff, Alberta, Canada</td>
+      <td>Chris Schmandt</td>
+      <td>George Robertson</td>
+    </tr>
+    <tr>
+      <td><a href="https://uist.acm.org/uist1996/">1996</a></td>
+      <td>Seattle, WA, USA</td>
+      <td>Marc Brown</td>
+      <td>David Kurlander</td>
+    </tr>
+    <tr>
+      <td><a href="https://uist.acm.org/uist1995/">1995</a></td>
+      <td>Pittsburgh, PA, USA</td>
+      <td>George Robertson</td>
+      <td>Brad A. Myers</td>
+    </tr>
+    <tr>
+      <td><a href="https://uist.acm.org/uist1994/">1994</a></td>
+      <td>Marina del Rey, CA, USA</td>
+      <td>Steve Feiner</td>
+      <td>Pedro Szekely</td>
+    </tr>
+    <tr>
+      <td><a href="https://uist.acm.org/archive/html/proceedings/1993.html">1993</a></td>
+      <td>Atlanta, GA, USA</td>
+      <td>Randy Pausch</td>
+      <td>Scott Hudson</td>
+    </tr>
+    <tr>
+      <td><a href="https://uist.acm.org/archive/html/proceedings/1992.html">1992</a></td>
+      <td>Monterey, CA, USA</td>
+      <td>Mark Green</td>
+      <td>Jock Mackinlay / Mark Green</td>
+    </tr>
+    <tr>
+      <td><a href="https://uist.acm.org/archive/html/proceedings/1991.html">1991</a></td>
+      <td>Hilton Head, SC, USA</td>
+      <td>Jock Mackinlay</td>
+      <td>James R. Rhyne</td>
+    </tr>
+    <tr>
+      <td><a href="https://uist.acm.org/archive/html/proceedings/1990.html">1990</a></td>
+      <td>Snowbird, UT, USA</td>
+      <td>Scott Hudson</td>
+      <td>Dan Olsen</td>
+    </tr>
+    <tr>
+      <td><a href="https://uist.acm.org/archive/html/proceedings/1989.html">1989</a></td>
+      <td>Williamsburg, VA, USA</td>
+      <td>Dan Olsen</td>
+      <td>John Sibert</td>
+    </tr>
+    <tr>
+      <td><a href="https://uist.acm.org/archive/html/proceedings/1988.html">1988</a></td>
+      <td>Banff, Alberta, Canada</td>
+      <td>John Siebert</td>
+      <td>Mark Green</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<h2 id="lasting-impact">Lasting Impact</h2>
+
+<p><em>UIST Lasting Impact Awards</em></p>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>Winner</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2024</td>
+      <td>Jacob O. Wobbrock, Andrew D. Wilson, and Yang Li. <br />
+<a href="https://dl.acm.org/doi/10.1145/1294211.1294238">Gestures without libraries, toolkits or training: A $1 recognizer for user interface prototypes</a>, published in 2007.</td>
+    </tr>
+    <tr>
+      <td>2023</td>
+      <td>Jeffrey P Bigham, Chandrika Jayant, Hanjie Ji, Greg Little, Andrew Miller, Robert C Miller, Robin Miller, Aubrey Tatarowicz, Brandyn White, Samual White, Tom Yeh <br />
+<a href="https://doi.org/10.1145/1866029.1866080">Vizwiz: Nearly Real-Time Answers to Visual Questions</a>, published in 2010.</td>
+    </tr>
+    <tr>
+      <td>2022</td>
+      <td>Chris Harrison, Hrvoje Benko, and Andy Wilson <br />
+<a href="https://dl.acm.org/doi/10.1145/2047196.2047255">OmniTouch: wearable multitouch interaction everywhere</a>, published in 2011.</td>
+    </tr>
+    <tr>
+      <td>2021</td>
+      <td>Shahram Izadi, David Kim, Otmar Hilliges, David Molyneaux, Richard
+        Newcombe, Pushmeet Kohli, Jamie Shotton, Steve Hodges, Dustin
+        Freeman, Andrew Davison, and Andrew Fitzgibbon <br />
+<a href="https://dl.acm.org/doi/10.1145/2047196.2047270">KinectFusion: Real-time 3D Reconstruction and Interaction Using
+          a Moving Depth Camera</a>, published in 2011.</td>
+    </tr>
+    <tr>
+      <td>2020</td>
+      <td>Michael S. Bernstein, Greg Little, Robert C. Miller, Björn
+        Hartmann, Mark S. Ackerman, David R. Karger, David Crowell, and
+        Katrina Panovich <br />
+<a href="https://dl.acm.org/doi/10.1145/1866029.1866078">Soylent: A Word Processor with a Crowd Inside</a>, published in 2010.</td>
+    </tr>
+    <tr>
+      <td>2019</td>
+      <td>Takeo Igarashi <br />
+<a href="https://dl.acm.org/doi/abs/10.1145/1281500.1281529">Interactive Beautification: A Technique for Rapid Geometric
+          Design</a>
+        and
+        <a href="https://dl.acm.org/doi/abs/10.1145/1281500.1281531">A suggestive interface for 3D drawing</a>, both published in 2007.</td>
+    </tr>
+    <tr>
+      <td>2018</td>
+      <td>Meredith Ringel Morris and Eric Horvitz <br />
+<a href="https://dl.acm.org/citation.cfm?id=1294215">SearchTogether: An Interface for Collaborative Web Search</a>, published in 2007.</td>
+    </tr>
+    <tr>
+      <td>2017</td>
+      <td>Ivan Poupyrev, Shigeaki Maruyama, Jun Rekimoto <br />
+<a href="https://doi.org/10.1145/159544.159566">Ambient Touch: Designing Tactile Interfaces for Handheld
+          Devices</a>, published in 2002.</td>
+    </tr>
+    <tr>
+      <td>2016</td>
+      <td>Jefferson Y. Han <br />
+<a href="https://doi.org/10.1145/1095034.1095054">Low-Cost Multi-Touch Sensing through Frustrated Total Internal
+          Reflection</a>, published in 2005.</td>
+    </tr>
+    <tr>
+      <td>2015</td>
+      <td>Saul Greenberg and Chester Fitchett <br />
+<a href="https://dx.doi.org/10.1145/502348.502388">Phidgets: Easy Development of Physical Interfaces through
+          Physical Widgets</a>, published in 2001.</td>
+    </tr>
+    <tr>
+      <td>2014</td>
+      <td>Per-Ola Kristensson and Shumin Zhai <br />
+<a href="https://dx.doi.org/10.1145/1029632.1029640">SHARK<sup>2</sup>: A Large Vocabulary Shorthand Writing System
+          for Pen-based Computers</a>, published in 2004.</td>
+    </tr>
+    <tr>
+      <td>2013</td>
+      <td>Jun Rekimoto and Katashi Nagao <br />
+<a href="https://dx.doi.org/10.1145/215585.215639">The World through the Computer: Computer Augmented Interaction
+          with Real World Environments</a>, published in 1995.</td>
+    </tr>
+    <tr>
+      <td>2012</td>
+      <td>Paul H. Dietz and Darren Leigh <br />
+<a href="https://dx.doi.org/10.1145/502348.502389">Diamond Touch: A Multi-User Touch Technology</a>, published in 2001.</td>
+    </tr>
+    <tr>
+      <td>2011</td>
+      <td>Ken Hinckley, Jeff Pierce, Mike Sinclair, and Eric Horvitz <br />
+<a href="https://dx.doi.org/10.1145/354401.354417">Sensing Techniques for Mobile Interaction</a>, published in 2000.</td>
+    </tr>
+    <tr>
+      <td>2010</td>
+      <td>Steven Feiner, Blair MacIntyre, Marcus Haupt, and Eliot Solomon
+        <br />
+<a href="https://dx.doi.org/10.1145/168642.168657">Windows on the World: 2D Windows for 3D Augmented Reality</a>, published in 1993.</td>
+    </tr>
+    <tr>
+      <td>2009</td>
+      <td>Brygg Ullmer and Hiroshi Ishii <br />
+<a href="https://dx.doi.org/10.1145/263407.263551">The metaDESK: Models and Prototypes for Tangible User
+          Interfaces</a>, published in 1997.</td>
+    </tr>
+    <tr>
+      <td>2008</td>
+      <td>Randy Pausch for his contributions to UIST, in particular for
+        <a href="https://dx.doi.org/10.1145/120782.120795">SUIT: The Pascal of User Interface Toolkits</a>, by Randy Pausch, Nathaniel R. Young II, Robert DeLine, published in 1991.</td>
+    </tr>
+    <tr>
+      <td>2007</td>
+      <td>Barry Arons <br />
+<a href="https://dx.doi.org/10.1145/168642.168661">SpeechSkimmer: Interactively Skimming Recorded Speech</a>, published in 1993.</td>
+    </tr>
+    <tr>
+      <td>2006</td>
+      <td>Ramana Rao, Stuart Card, Herbert Jellinek, Jock Mackinlay, and
+        George Robertson <br />
+<a href="https://doi.acm.org/10.1145/142621.142625">The Information Grid: A Framework for Information Retrieval and
+          Retrieval-Centered Applications</a>, published in 1992.</td>
+    </tr>
+    <tr>
+      <td>2005</td>
+      <td>Gord Kurtenbach and Bill Buxton<br />
+<a href="https://dx.doi.org/10.1145/120782.120797">Issues in Combining Marking and Direct Manipulation
+          Techniques</a>, published in 1991.</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>Bay-Wei Chang for his work on animation in user interfaces, in
+        particular for
+        <a href="https://dx.doi.org/10.1145/168642.168647">Animation: From Cartoons to the User Interface</a>, published in 1993.</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>Pierre Wellner for his early work on DigitalDesk, in particular
+        for
+        <a href="https://dx.doi.org/10.1145/120782.120785">The DigitalDesk Calculator: Tangible Manipulation on a Desk Top
+          Display</a>, published in 1991. &nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<h2 id="best-papers">Best Papers</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>Winner</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2024</td>
+      <td>Aditya Gunturu, Yi Wen, Nandi Zhang, Jarin Thundathil, Rubaiat Habib Kazi, Ryo Suzuki: "Augmented Physics: Creating Interactive and Embedded Physics Simulations from Static Textbook Diagrams"</td>
+    </tr>
+    <tr>
+      <td>2024</td>
+      <td>Shunta Suzuki, Takashi Amesaka, Hiroki Watanabe, Buntarou Shizuki, Yuta Sugiura: "EarHover: Mid-Air Gesture Recognition for Hearables Using Sound Leakage Signals"</td>
+    </tr>
+    <tr>
+      <td>2024</td>
+      <td>Nicholas Jennings, Han Wang, Isabel Li, James Smith, Bjoern Hartmann: "What's the Game, then? Opportunities and Challenges for Runtime Behavior Generation"</td>
+    </tr>
+    <tr>
+      <td>2024</td>
+      <td>Ruei-Che Chang, Yuxuan Liu, Anhong Guo: "WorldScribe: Towards Context-Aware Live Visual Descriptions"</td>
+    </tr>
+    <tr>
+      <td>2023</td>
+      <td>Mina Huh, Yi-hao Peng, Amy Pavel: "GenAssist: Making Image Generation Accessible"</td>
+    </tr>
+    <tr>
+      <td>2023</td>
+      <td>Joon Sung Park, Joey O'Brien, Carrie J Cai, Meredith Ringel Morris, Percy Liang, Michael S. Bernstein: "Generative Agents: Interactive Simulacra of Human Behavior"</td>
+    </tr>
+    <tr>
+      <td>2023</td>
+      <td>Vivek C Nair, Gonzalo Munilla-Garrido, Dawn Song: "Going Incognito in the Metaverse: Achieving Theoretically Optimal Privacy-Usability Tradeoffs in VR"</td>
+    </tr>
+    <tr>
+      <td>2022</td>
+      <td>Xingyu 'Bruce' Liu, Ruolin Wang, Dingzeyu Li, Xiang 'Anthony' Chen, Amy Pavel: "CrossA11y: Identifying Video Accessibility Issues via Cross-modal Grounding"</td>
+    </tr>
+    <tr>
+      <td>2022</td>
+      <td>Md Ehtesham-Ul-Haque, Syed Mostofa Monsur, Syed Masum Billah: "Grid-Coding: An Accessible, Efficient, and Structured Coding Paradigm for Blind and Low-Vision Programmers"</td>
+    </tr>
+    <tr>
+      <td>2022</td>
+      <td>Marion Koelle, Madalina Luciana Nicolae, Aditya Shekhar Nittala, Marc Teyssier, Jürgen Steimle: "Prototyping Soft Devices with Interactive Bioplastics"</td>
+    </tr>
+    <tr>
+      <td>2021</td>
+      <td>Yujie Tao, Shan-Yuan Teng, and Pedro Lopes: "Altering Perceived
+        Softness of Real Rigid Objects by Restricting Fingerpad
+        Deformation"</td>
+    </tr>
+    <tr>
+      <td>2021</td>
+      <td>Mohamed Kari, Tobias Grosse-Puppendahl, Alexander Jagaciak, David
+        Bethge, Reinhard Schütte, and Christian Holz: "SoundsRide:
+        Affordance-Synchronized Music Mixing for In-Car Audio Augmented
+        Reality"</td>
+    </tr>
+    <tr>
+      <td>2021</td>
+      <td>Philip Guo: "Ten Million Users and Ten Years Later: Python Tutor's
+        Design Guidelines for Building Scalable and Sustainable Research
+        Software in Academia"</td>
+    </tr>
+    <tr>
+      <td>2020</td>
+      <td>Toby Jia-Jun Li, Jingya Chen, Haijun Xia, Tom M. Mitchell, and
+        Brad A. Myers: "Multi-Modal Repairs of Conversational Breakdowns
+        in Task-Oriented Dialogs"</td>
+    </tr>
+    <tr>
+      <td>2020</td>
+      <td>Jun Nishida, Soichiro Matsuda, Hiroshi Matsui, Shan-Yuan Teng,
+        Ziwei Liu, Kenji Suzuki, and Pedro Lopes: "HandMorph: a Passive
+        Exoskeleton that Miniaturizes Grasp"</td>
+    </tr>
+    <tr>
+      <td>2020</td>
+      <td>Neung Ryu, Woojin Lee, Myung Jin Kim, and Andrea Bianchi:
+        "ElaStick: A Handheld Variable Stiffness Display for Rendering
+        Dynamic Haptic Response of Flexible Object"</td>
+    </tr>
+    <tr>
+      <td>2019</td>
+      <td>Arshad Khan, Joan Sol Roo, Tobias Kraus, and Jürgen Steimle: "Soft
+        Inkjet Circuits: Rapid Multi-Material Fabrication of Soft Circuits
+        using a Commodity Inkjet Printer"</td>
+    </tr>
+    <tr>
+      <td>2019</td>
+      <td>Yuhua Jin, Isabel Qamar, Michael Wessely, Aradhana Adhikari,
+        Katarina Bulovic, Parinya Punpongsanon, and Stefanie Mueller:
+        "Photo-Chromeleon: Re-Programmable Multi-Color Textures Using
+        Photochromic Dyes"</td>
+    </tr>
+    <tr>
+      <td>2019</td>
+      <td>Zheer Xu, Pui Chung Wong, Jun Gong, Te-Yen Wu, Aditya Shekhar
+        Nittala, Xiaojun Bi, Jürgen Steimle, Hongbo Fu, Kening Zhu, and
+        Xing-Dong Yang: "TipText: Eyes-Free Text Entry on a Fingertip
+        Keyboard"</td>
+    </tr>
+    <tr>
+      <td>2018</td>
+      <td>David Porfirio, Allison Sauppé, Aws Albarghouthi and Bilge Mutlu:
+        "Authoring and Verifying Human-Robot Interactions"</td>
+    </tr>
+    <tr>
+      <td>2018</td>
+      <td>Alok Mysore and Philip J. Guo: "Porta: Profiling Software
+        Tutorials Using Operating-System-Wide Activity Tracing"</td>
+    </tr>
+    <tr>
+      <td>2018</td>
+      <td>Patrick Parzer, Florian Perteneder, Kathrin Probst, Christian
+        Rendl, Joanne Leong, Sarah Schuetz, Anita Vogl, Reinhard
+        Schwoediauer, Martin Kaltenbrunner, Siegfried Bauer and Michael
+        Haller: "RESi: A Highly Flexible, Pressure-Sensitive,
+        Imperceptible Textile Interface Based on Resistive Yarns"</td>
+    </tr>
+    <tr>
+      <td>2017</td>
+      <td>Nora Willett, Wilmot Li, Jovan Popovic, Adam Finkelstein:
+        "Triggering Artwork Swaps for Live Animation"</td>
+    </tr>
+    <tr>
+      <td>2017</td>
+      <td>Inrak Choi, Heather Culbertson, Mark Miller, Alex Olwal, Sean
+        Follmer: "Grabity: A Wearable Haptic Interface for Simulating
+        Weight and Grasping in Virtual Reality"</td>
+    </tr>
+    <tr>
+      <td>2017</td>
+      <td>Dingzeyu Li, Avinash Nair, Shree Nayar, Changxi Zheng: "AirCode:
+        Unobtrusive Physical Tags for Digital Fabrication"</td>
+    </tr>
+    <tr>
+      <td>2016</td>
+      <td>Mathieu Le Goc, Lawrence H Kim, Ali Parsaei, Jean-Daniel Fekete,
+        Pierre Dragicevic, Sean Follmer: "Zooids: Building Blocks for
+        Swarm User Interfaces"</td>
+    </tr>
+    <tr>
+      <td>2016</td>
+      <td>Artem Dementyev, Hsin-Liu 'Cindy' Kao, Inrak Choi, Deborah Ajilo,
+        Maggie Xu, Joseph A. Paradiso, Chris Schmandt, Sean Follmer:
+        "Rovables: Miniature On-Body Robots as Mobile Wearables"</td>
+    </tr>
+    <tr>
+      <td>2016</td>
+      <td>Gierad Laput, Robert Xiao, Chris Harrison: "ViBand: High-Fidelity
+        Bio-Acoustic Sensing Using Commodity Smartwatch Accelerometers"</td>
+    </tr>
+    <tr>
+      <td>2016</td>
+      <td>Joanne Leong, Patrick Parzer, Florian Perteneder, Teo Babic, Christian Rendl, Anita Vogl, Hubert Egger, Alex Olwal, Michael Haller: "proCover: Sensory Augmentation of Prosthetic Limbs Using Smart Textile Covers"</td>
+    </tr>
+    <tr>
+      <td>2015</td>
+      <td>Simon Olberding,
+        Sergio Soto Ortega, Klaus Hildebrandt, Jurgen Steimle: "Foldio: Digital
+        Fabrication of Interactive and Shape-Changing Objects With
+        Foldable Printed Electronics"</td>
+    </tr>
+    <tr>
+      <td>2015</td>
+      <td>Augusto Esteves, Eduardo Velloso, Andreas Bulling, Hans Gellersen: "Orbits: Gaze Interaction for
+        Smart Watches using Smooth Pursuit Eye Movements"</td>
+    </tr>
+    <tr>
+      <td>2015</td>
+      <td>Clemens Klokmose, James Eagan, Siemen Baader, Wendy Mackay, Michel Beaudouin-Lafon: "Webstrates: Shareable
+        Dynamic Media"</td>
+    </tr>
+    <tr>
+      <td>2014</td>
+      <td>Ken Hinckley, Michel Pahud, Hrvoje Benko, Pourang Irani, Marcel
+        Gavriliu, François Guimbretière, Xiang 'Anthony'
+        Chen, Fabrice Matulic, William Buxton, Andrew Wilson: "Sensing Techniques for
+        Tablet+Stylus Interaction"</td>
+    </tr>
+    <tr>
+      <td>2014</td>
+      <td>Daniela Retelny, Sébastien Robaszkiewicz, Alexandra To, Walter Lasecki, Jay Patel, Negar Rahmati, Tulsee Doshi, Melissa Valentine, Michael Bernstein: "Expert Crowdsourcing with Flash Teams"</td>
+    </tr>
+    <tr>
+      <td>2014</td>
+      <td>Simon Olberding, Michael Wessely, Jürgen Steimle: "PrintScreen: Fabricating Highly Customizable Thin-film Touch-Displays"</td>
+    </tr>
+    <tr>
+      <td>2013</td>
+      <td>Christian Holz, Patrick Baudisch: "Fiberio: A Touchscreen that Senses Fingerprints"</td>
+    </tr>
+    <tr>
+      <td>2013</td>
+      <td>Lining Yao, Ryuma Niiyama, Jifei Ou, Sean Follmer, Clark Della Silva, Hiroshi Ishii: "PneUI: Pneumatically Actuated Soft Composite Materials for Shape Changing Interfaces"</td>
+    </tr>
+    <tr>
+      <td>2013</td>
+      <td>Makoto Ono, Buntarou Shizuki, Jiro Tanaka: "Touch &amp; Activate: Adding Interactivity to Existing Objects using Active Acoustic Sensing"</td>
+    </tr>
+    <tr>
+      <td>2012</td>
+      <td>Neel Joshi, Sisil Mehta, Eric Stollnitz, Steven Drucker, Hugues Hoppe, Matt Uyttendaele, Michael Cohen: "Cliplets: Juxtaposing Still and Dynamic Imagery"</td>
+    </tr>
+    <tr>
+      <td>2012</td>
+      <td>Jeffrey Rzeszotarski, Aniket Kittur : "CrowdScape: Interactively visualizing crowd behavior and output"</td>
+    </tr>
+    <tr>
+      <td>2012</td>
+      <td>Sean Follmer, Daniel Leithinger, Nadia Cheng, Hiroshi Ishii: "Jamming User Interfaces: Programmable Particle Stiffness and Sensing for Malleable and Shape-Changing Devices"</td>
+    </tr>
+    <tr>
+      <td>2011</td>
+      <td>Karl D.D. Willis,
+        Ivan Poupyrev, Scott E Hudson, Moshe Mahler: "SideBySide: Ad-hoc Multi-user Interaction with Handheld Projectors"</td>
+    </tr>
+    <tr>
+      <td>2011</td>
+      <td><i>Notable paper: </i>
+        James Eagan, Michel Beaudouin-Lafon, Wendy Mackay: "Cracking the Cocoa Nut: User Interface Programming at Runtime"</td>
+    </tr>
+    <tr>
+      <td>2011</td>
+      <td><i>Notable paper: </i>
+        Manolis Savva, Nicholas Kong, Arti Chhajta, Li Fei-Fei, Maneesh Agrawala, Jeffrey Heer: "ReVision: Automated Classification, Analysis and Redesign of Chart Images"</td>
+    </tr>
+    <tr>
+      <td>2011</td>
+      <td><i>Notable paper: </i>
+        Raphael Wimmer, Patrick Baudisch: "Modular and Deformable Touch-Sensitive Surfaces Based on Time Domain Reflectometry"</td>
+    </tr>
+    <tr>
+      <td>2010</td>
+      <td><i>Notable paper: </i>
+        Jeffrey Bigham, Chandrika Jayant, Hanjie Ji, Greg Little, Andrew Miller, Robert C. Miller, Robin Miller, Aubrey Tatarowicz, Brandyn White, Samuel White, Tom Yeh, University of Maryland: "VizWiz: Nearly Real-Time Answers to Visual Questions"</td>
+    </tr>
+    <tr>
+      <td>2009</td>
+      <td><i>Best student paper: </i>
+      Michael S. Bernstein, Greg Little, Robert C. Miller, Bjoern Hartmann, Mark S. Ackerman, David R. Karger, David Crowell, Katrina Panovich : "Soylent: A Word Processor with a Crowd Inside"</td>
+    </tr>
+    <tr>
+      <td>2009</td>
+      <td>Nicolas Villar, Shahram Izadi, Dan Rosenfeld, Hrvoje Benko, John
+        Helmes, Jonathan Westhues, Steve Hodges, Eyal Ofek, Alex Butler,
+        Xiang Cao, Billy Chen: "Mouse 2.0: Multi-touch meets the Mouse"</td>
+    </tr>
+    <tr>
+      <td>2009</td>
+      <td><i>Best student paper: </i>
+        Tom Yeh, Tsung-Hsiang Chang, Robert C. Miller: "Sikuli: Using GUI Screenshots for Search and
+        Automation"</td>
+    </tr>
+    <tr>
+      <td>2008</td>
+      <td>Andrew Wilson, Shahram Izadi, Otmar Hilliges, Armando Garcia-Mendoza, David Kirk: "Bringing Physics to the Surface"</td>
+    </tr>
+    <tr>
+      <td>2008</td>
+      <td><i>Best student paper: </i>
+        Björn Hartmann, Loren Yu, Abel Allison, Yeonsoo Yang, Scott
+        Klemmer : "Design As Exploration:
+        Creating Interface Alternatives through Parallel Authoring and
+        Runtime Tuning"</td>
+    </tr>
+    <tr>
+      <td>2007</td>
+      <td>Steve Hodges, Shahram Izadi, Alex Butler, Alban Rrustemi, Bill
+        Buxton: "ThinSight: Versatile Multi-touch Sensing for Thin
+        Form-factor Displays"</td>
+    </tr>
+    <tr>
+      <td>2006</td>
+      <td>Björn Hartmann, Scott Klemmer, Michael Bernstein, Leith Abdulla,
+        Brandon Burr, Avi Robinson-Mosher, and Jennifer Gee: "Reflective Physical Prototyping through Integrated Design, Test, and Analysis"</td>
+    </tr>
+    <tr>
+      <td>2006</td>
+      <td><i>Best student paper: </i>
+        Anastasia Bezeranios, Pierre Dragicevic, and Ravin Balakrishnan:
+      "Mnemonic Rendering: An Image-Based Approach for Exposing Hidden Changes in Dynamic Displays"</td>
+    </tr>
+    <tr>
+      <td>2005</td>
+      <td>Michael Bolin, Matthew Webber, Philip Rha, Tom Wilson, Robert Miller: Automation and Customization of Rendered Web Pages</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>Georg Apitz &amp; François Guimbretière: "CrossY: A Crossing-Based Drawing Application"</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>Tovi Grossman, Daniel Wigdor, Ravin Balakrishnan: Multi-Finger Gestural Interaction with 3D Volumetric Displays</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>Eric Saund, David Fleet, Daniel Larner, James Mahoney: "Perceptually-Supported Image Editing of Text and Graphics"</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td><i>Best student paper: </i> Bongwon Suh, Haibin Ling, Ben Bederson, and David Jacobs: "Automatic Thumbnail Cropping and its Effectiveness"</td>
+    </tr>
+    <tr>
+      <td>2002</td>
+      <td>Takeo Igarashi &amp; John F. Hughes: "Clothing Manipulation"</td>
+    </tr>
+    <tr>
+      <td>2002</td>
+      <td><i>Best student paper: </i> Haowei Hsieh, Frank Shipman: "Manipulating Structured Information in a Visual Workspace"</td>
+    </tr>
+    <tr>
+      <td>2001</td>
+      <td>Saul Greenberg and Chester Fitchett: "Phidgets: Easy Development of Physical Interfaces through Physical Widgets"</td>
+    </tr>
+    <tr>
+      <td>2001</td>
+      <td><i>Best student paper: </i>
+        Blaine Bell, Steven Feiner and Tobias Hoellerer: "View Management for Virtual and Augmented Reality"</td>
+    </tr>
+    <tr>
+      <td>2000</td>
+      <td>Ken Hinckley, Jeff Pierce, Mike Sinclair, and Eric Horvitz: "Sensing Techniques for Mobile Interaction"</td>
+    </tr>
+    <tr>
+      <td>1996</td>
+      <td>Alan Borning, Richard Anderson, and Bjorn Freeman-Benson: "Indigo: A Local Propagation Algorithm for Inequality Constraints" &nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<h2 id="best-talks">Best Talks</h2>
+
+<p><i>People’s Choice Best Talk Winners</i></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>Winner</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2018</td>
+      <td>Alex Olwal, Jon Moeller, Greg Priest-Dorman, Thad Starner, Ben Carroll: "I/O Braid: Scalable Touch-Sensitive Lighted Cords Using Spiraling, Repeating Sensing Textiles and Fiber Optics"</td>
+    </tr>
+    <tr>
+      <td>2017</td>
+      <td>Teddy Seyed, Xing-Dong Yang, Daniel Vogel: "A Modular Smartphone for Lending"</td>
+    </tr>
+    <tr>
+      <td>2016</td>
+      <td>Chiuan Wang, Hsuan-Ming Yeh, Bryan Wang, Te-Yen Wu, Hsin-Ruey Tsai, Rong-Hao Liang, Yi-Ping Hung, Mike Y. Chen: "CircuitStack: Supporting Rapid Prototyping and Evolution of Electronic Circuits"</td>
+    </tr>
+    <tr>
+      <td>2016</td>
+      <td>Gierad Laput, Robert Xiao, Chris Harrison: "ViBand: High-Fidelity Bio-Acoustic Sensing Using Commodity Smartwatch Accelerometers"</td>
+    </tr>
+    <tr>
+      <td>2015</td>
+      <td>Gierad Laput: "EM-Sense: Touch Recognition of Uninstrumented, Electrical and Electromechanical Objects"</td>
+    </tr>
+    <tr>
+      <td>2014</td>
+      <td>Yuta Sugiura: "Graffiti fur: turning your carpet into a computer display"</td>
+    </tr>
+    <tr>
+      <td>2014</td>
+      <td>James McCrae: "FlatFitFab: Interactive Modeling with Planar Sections"</td>
+    </tr>
+    <tr>
+      <td>2014</td>
+      <td>Rubaiat Habib Kazi: "Kitty: sketching dynamic and interactive illustrations"</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<h2 id="keynotes">Keynotes</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>Speakers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2024</td>
+      <td>Raj Reddy (Carnegie Mellon University), Yaser Sheikh (Meta Reality Labs (Pittsburgh))</td>
+    </tr>
+    <tr>
+      <td>2023</td>
+      <td>David Holz (Midjourney, Leap Motion), Judy Fan (Standford)</td>
+    </tr>
+    <tr>
+      <td>2022</td>
+      <td>Ted Chiang (Author), Marissa Mayer (Sunshine/Yahoo)</td>
+    </tr>
+    <tr>
+      <td>2021</td>
+      <td>Tessa Lau (Dusty Robotics), Manohar Swaminathan (Microsoft Research India), Melody Ivory (Thrivafy)</td>
+    </tr>
+    <tr>
+      <td>2020</td>
+      <td>Afua Bruce (DataKind), Sasha Costanza-Chock (MIT)</td>
+    </tr>
+    <tr>
+      <td>2019</td>
+      <td>Elizabeth Gerber (Northwestern), Cristina (Crista) Lopes (UCI)</td>
+    </tr>
+    <tr>
+      <td>2018</td>
+      <td>Jaime Teevan (Microsoft), Selma Sabanovic (Indiana University)</td>
+    </tr>
+    <tr>
+      <td>2017</td>
+      <td>Gabriella Coleman (McGill University), Niki Kittur (CMU)</td>
+    </tr>
+    <tr>
+      <td>2016</td>
+      <td>Takeo Kanade (CMU), Naoto Fukasawa (NAOTO FUKASAWA DESIGN)</td>
+    </tr>
+    <tr>
+      <td>2015</td>
+      <td>Ramesh Raskar (MIT), Blaise Aguera y Arcas (Google)</td>
+    </tr>
+    <tr>
+      <td>2014</td>
+      <td>Mark Bolas (USC), Bret Victor (worrydream.com)</td>
+    </tr>
+    <tr>
+      <td>2013</td>
+      <td>Raffaello D'Andrea (ETH Zurich)</td>
+    </tr>
+    <tr>
+      <td>2012</td>
+      <td>Margaret Livingstone (Harvard)</td>
+    </tr>
+    <tr>
+      <td>2011</td>
+      <td>Ge Wang (Stanford), Dan Jurafsky (Stanford)</td>
+    </tr>
+    <tr>
+      <td>2010</td>
+      <td>Marvin Minsky (MIT), Natalie Jeremijenko (NYU), Jaron Lanier</td>
+    </tr>
+    <tr>
+      <td>2009</td>
+      <td>Stephen L. Macknik, Susana Martinez-Conde (Barrow Neurological Institute), Eric Paulos (CMU)</td>
+    </tr>
+    <tr>
+      <td>2008</td>
+      <td>Dan Olsen (BYU), Cynthia Breazeal (MIT)</td>
+    </tr>
+    <tr>
+      <td>2007</td>
+      <td>
+      David Woods (<a href="https://uist.acm.org/uist2007/program/keynote1.html">info</a>),
+      Jeremy Wolfe (<a href="https://uist.acm.org/uist2007/program/keynote2.html">info</a>)
+      </td>
+    </tr>
+    <tr>
+      <td>2006</td>
+      <td>Peter Naur (University of Copenhagen)</td>
+    </tr>
+    <tr>
+      <td>2005</td>
+      <td>Gary Starkweather (<a href="https://uist.acm.org/uist2005/keynote.htm">info</a>)</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>Mary Czerwinski (Microsoft Research)</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>Ben Shneiderman (University of Maryland), Sandra Marshall (UC San Diego)</td>
+    </tr>
+    <tr>
+      <td>2002</td>
+      <td>Peter Wegner (Brown University), Jakub Wejchert (European Commission), Tony R. Martinez (Brigham Young University)</td>
+    </tr>
+    <tr>
+      <td>2001</td>
+      <td>Jef Raskin: Making Machines Fit for Human Consumption, Miguel Nicolelis (Duke University)</td>
+    </tr>
+    <tr>
+      <td>2000</td>
+      <td>Eric Brewer (Berkeley), James D. Foley (Yamacraw)</td>
+    </tr>
+    <tr>
+      <td>1999</td>
+      <td>Seth Rosenthal (Industrial Light + Magic), Turner Whitted (Microsoft Research)</td>
+    </tr>
+    <tr>
+      <td>1998</td>
+      <td>Jim Waldo (Sun Microsystems), Adele Goldberg (Neometron)</td>
+    </tr>
+      <tr>
+        <td>1997</td>
+        <td>John Sibert (George Washington University), Jim Kajiya (Microsoft Research)</td>
+      </tr>
+      <tr>
+        <td>1996</td>
+        <td>James Gosling (SUN), Fred Brooks (UNC Chapel Hill)</td>
+      </tr>
+      <tr>
+        <td>1995</td>
+        <td>Maria Klawe (University of British Columbia), Jim Morris (Carnegie Mellon University), Bill Buxton (Alias Research)</td>
+      </tr>
+      <tr>
+        <td>1994</td>
+        <td>Don Norman (Apple Computer), Mark Weiser (Xerox PARC)</td>
+      </tr>
+      <tr>
+        <td>1993</td>
+        <td>Terry Winograd (Stanford University and Interval Research), Bruce Tognazzini (SunSoft)</td>
+      </tr>
+      <tr>
+        <td>1992</td>
+        <td>Raj Reddy (Carnegie Mellon), Tony Hoeber (GO Corporation)</td>
+      </tr>
+      <tr>
+        <td>1991</td>
+        <td>Robert S. Williges (Virginia Tech), Andries van Dam (Brown University)</td>
+      </tr>
+      <tr>
+        <td>1990</td>
+        <td>Stuart Card (Xerox PARC), Elaine Rich (MCC AI Lab)</td>
+      </tr>
+      <tr>
+        <td>1989</td>
+        <td>Jim Thomas (Battelle Pacific Northwest Laboratories), Jaron Lanier (VPL Research)</td>
+      </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<h2 id="prehistory">Prehistory</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>Location</th>
+      <th>Name</th>
+      <th>Proceedings</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1986</td>
+      <td>Seattle, WA</td>
+      <td>Software Tools UI Management</td>
+      <td>Computer Graphics, Vol. 21, No. 2</td>
+    </tr>
+    <tr>
+      <td>1983</td>
+      <td>Seeheim, Germany</td>
+      <td>Workshop on UIMS</td>
+      <td>UI Management Systems, G. Pfaff, Springer-Verlag, 1985</td>
+    </tr>
+    <tr>
+      <td>1982</td>
+      <td>Seattle, WA</td>
+      <td>GIIT Workshop</td>
+      <td>Computer Graphics, Vol. 17, No. 1</td>
+    </tr>
+  </tbody>
+</table>
+
+  <footer class="site-footer my-5"><span class="text-end">&copy; 2026 ACM SIGCHI.</span> Logo/iconography designed by <a
+                href="https://www.shuhong-hci.com">Shuhong Wang</a>. Detroit photography from <a
+                href="https://visitdetroit.com/">Visit Detroit</a>.</footer>
+</main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  
+  <title>UIST 2026 - UIST Author Guide</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Cache-control" content="public" />
+  <meta http-equiv="content-type" content="text/html" />
+  <link rel="icon" href="/2026/favicon.ico?v=3" type="image/x-icon" />
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous" defer></script> -->
+  <link rel="stylesheet" href="/2026/assets/style.css?v=2" />
+  <script src="/2026/assets/js/color-modes.js"></script>
+</head>
+
+<body>
+
+  <a class="sr-only sr-only-focusable" href="#main-content">Skip to main content</a>
+
+<!-- DEBUG: page.url = '/author-guide/' -->
+<nav class="navbar fixed-top navbar-expand-lg" id="myTopnav">
+    <div class="container ">
+        <a class="navbar-brand nav-link " href="/2026/"><img
+                src="/2026/assets/images/uist_26_logo.png" id="navbar-logo"
+                data-light-src="/2026/assets/images/uist_26_logo_light_bg.png"
+                data-dark-src="/2026/assets/images/uist_26_logo.png" alt="UIST 2026 Home"
+                style="height: 45px" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav nav nav-underline ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link " href="/2026/cfp">Full CFP</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="/2026/sponsors">For
+                        Sponsors</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link "
+                        href="/2026/organizers">Organizers</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        More Info
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="/2026/archive/">UIST Archive</a></li>
+                        <li><a class="dropdown-item" href="/2025/">Previous Year (UIST 2025)</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <button class="nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center" id="bd-theme"
+                        type="button" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static"
+                        aria-label="Toggle theme (auto)">
+                        <i class="fas fa-circle-half-stroke my-1 theme-icon-active"></i>
+                        <span class="d-lg-none ms-2" id="bd-theme-text">Toggle theme</span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
+                        <li class="dropdown-item" data-bs-theme-value="light" aria-pressed="false">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-sun me-2 opacity-50 theme-icon" data-theme-icon="fa-sun"></i>
+                                Light
+                                <i class="fas fa-check ms-auto d-none"></i>
+                            </div>
+                        </li>
+                        <li class="dropdown-item" data-bs-theme-value="dark" aria-pressed="false">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-moon me-2 opacity-50 theme-icon" data-theme-icon="fa-moon"></i>
+                                Dark
+                                <i class="fas fa-check ms-auto d-none"></i>
+                            </div>
+                        </li>
+                        <li class="dropdown-item" data-bs-theme-value="auto" aria-pressed="true">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-circle-half-stroke me-2 opacity-50 theme-icon"
+                                    data-theme-icon="fa-circle-half-stroke"></i>
+                                Auto
+                                <i class="fas fa-check ms-auto d-none"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<!-- <div class="logo-area" style="height: 200px;">
+  <div class="logo-bg"></div>
+</div> -->
+<div class="logo-area" style="height: 0px;">
+  <div class="logo-bg"></div>
+</div>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.min.js" defer></script>
+<script src="/2026/assets/js/subCanvas.js" defer></script> -->
+
+
+
+<main id="main-content" class="container ">
+  <span id="cursor"></span>
+<script type="text/javascript" src="/2026/assets/js/scroll-progress.min.js" defer></script>
+<script type="text/javascript" src="/2026/assets/js/initScroll.js?v=2" defer></script>
+
+<style>
+#markdown-toc { width: 220px; }
+</style>
+
+
+<h2 class="title" id="uist-author-guide">UIST Author Guide</h2>
+
+<ul id="markdown-toc">
+  <li><a href="#uist-author-guide" id="markdown-toc-uist-author-guide">UIST Author Guide</a></li>
+  <li><a href="#paper-requirements" id="markdown-toc-paper-requirements">Paper Requirements</a></li>
+  <li><a href="#writing-guidelines" id="markdown-toc-writing-guidelines">Writing Guidelines</a></li>
+  <li><a href="#accessibility-guidelines" id="markdown-toc-accessibility-guidelines">Accessibility Guidelines</a></li>
+  <li><a href="#process-overview" id="markdown-toc-process-overview">Process Overview</a>    <ul>
+      <li><a href="#review-process" id="markdown-toc-review-process">Review Process</a></li>
+      <li><a href="#rebuttal-process" id="markdown-toc-rebuttal-process">Rebuttal Process</a></li>
+      <li><a href="#camera-ready" id="markdown-toc-camera-ready">Camera-Ready</a></li>
+    </ul>
+  </li>
+</ul>
+
+<p>UIST features papers, demos, and posters, as described in the <a href="/2026/cfp/">Call for Participation</a>.</p>
+
+<p>This author guide contains:</p>
+
+<ul>
+  <li><a href="#paper-requirements">Paper Requirements</a></li>
+  <li><a href="#writing-guidelines">Writing Guidelines</a></li>
+  <li><a href="#accessibility-guidelines">Accessibility Guidelines</a></li>
+  <li><a href="#process-overview">Process Overview</a>
+    <ul>
+      <li><a href="#review-process">Review Process</a></li>
+      <li><a href="#rebuttal-process">Rebuttal Process</a></li>
+      <li><a href="#camera-ready">Camera-Ready</a></li>
+    </ul>
+  </li>
+</ul>
+
+<p>While the material in this guide is primarily oriented towards paper authors, its general emphasis on quality and stringent review is also applicable to authors of demo and poster submissions. Accepted papers will be presented during three days of technical sessions at the conference and published in the conference proceedings.</p>
+
+<h2 id="paper-requirements">Paper Requirements</h2>
+
+<h2 class="details" id="requirements">Concerning Novelty, Concurrent Submissions, and Anonymity</h2>
+
+<p><strong>Previous Publications:</strong> UIST paper submissions must not have been published previously.</p>
+
+<ul>
+  <li>A paper is considered published if it has appeared in an English-language, peer-reviewed journal or conference proceedings that is archived, i.e., permanently available afterward in print or electronic form to non-attendees.
+    <ul>
+      <li>A publication does not count as archival if it is published in a language other than English. Such papers may be submitted as novel work, but must keep the author list the same, reference the non-English work in an anonymized way (i.e., remove author names but list title and venue), include a pdf of the original paper without author names in the supplementary material, and check the copyright agreement with the original publisher to make sure re-publication is permissible.</li>
+    </ul>
+  </li>
+  <li>A paper is not considered published if it has been presented in forms explicitly labeled as “non-archival” (examples include: CHI extended abstracts (alt.chi, works-in-progress, posters, demos, etc.), arXiv.org, the SIGGRAPH Emerging Technology venue, tech reports, and UIST posters and demos). Such ‘non-archival’ work does not count against a paper submission even if the non-archival work was in fact archived, as is common for UIST posters and demos from previous years that may appear in the ACM DL. Thus, presenting a UIST poster or demo does not prevent an author from submitting a full paper on the same topic in one of the following years.</li>
+</ul>
+
+<p><strong>Amount of New Content:</strong> A UIST paper submission cannot be considered a novel manuscript if it reports an incremental update or a small improvement to a previously published work. Significant new developments and findings have to be reported for the paper to be considered a novel manuscript.</p>
+
+<ul>
+  <li>Novelty Over Existing Archival Work (i.e., previously published papers):
+<br />a paper has to include about 70% new material to be considered a novel contribution over existing archival work.</li>
+  <li>Novelty Over Existing Non-Archival Work (i.e., previously shown demos, posters):
+<br />a paper has to include about 30% new material to be considered a novel contribution over existing non-archival work.</li>
+</ul>
+
+<p>Authors wishing to submit work containing substantial portions of work published elsewhere will need to check the copyright agreement with the original publisher to make sure that this is permissible.</p>
+
+<p><strong>Concurrent Submission is Prohibited:</strong> UIST paper submissions must not be under concurrent submission to another conference or journal. A submission is considered concurrent if the paper is identical or substantially similar to (or even a subset or superset of) the submitted UIST paper. This applies to the duration of the entire UIST review process, from the submission deadline until the notification of decisions is emailed to authors. This restriction applies even if the overlap in review timelines between UIST and another venue is just a few days or even a few hours, and even if it is your intent to withdraw the submission from the other venues at the moment it is accepted by one of them. This restriction also applies even if the other venues do allow concurrent submissions. UIST reviewers are often familiar with the papers under review at other related conferences and journals; as such, submissions that are substantially similar run the risk of being rejected by UIST and the other venues on the grounds of duplication alone.</p>
+
+<p><b id="anonymity">Remove Identifying Information to Preserve Anonymity:</b>
+Paper submissions are anonymous. You are required to make a reasonable effort to purge identifying information from your submission by removing remove all author and institutional information from the paper, the video, and all supplementary materials. Submissions that do not do so will be rejected without review. If you have to refer to your own work, please use the citation guidelines as described in ‘Referencing Your Own Prior Work’ below. While the details of anonymization in the body of the paper are ultimately left to the authors’ discretion, we understand that some work, such as widely publicized websites, applications, or performances, are difficult (or impossible) to anonymize without degrading the quality of the writing. In these cases, we encourage the authors to ensure that details relevant for review of this paper are included. The rules stated here apply to papers only. Submissions to the Posters, Demos, and Doctoral Symposium tracks should follow the anonymization guidelines in the respective calls for those tracks.</p>
+
+<p><b id="cite-prior">Reference Your Own Prior Work Without Violating Anonymity</b></p>
+
+<p>UIST has explicit rules on how to refer to your own prior related work.</p>
+
+<ul>
+  <li>Talk about your own work in 3rd person and include a full reference with names.</li>
+  <li>If your previous work has significant overlap, then also submit an anonymized version of that work as supplementary material in PCS.</li>
+</ul>
+
+<p><strong>Avoid Publicizing Your Work During the Review Process:</strong> While publicizing and promoting work during the review process goes against the spirit of anonymous review, we understand that there are competing interests that make publicity important. The UIST community has agreed that such publicity should not be explicitly prohibited or penalized. However, we encourage authors to wait until the review process is over to publicize their work.</p>
+
+<p><strong>Video Figure Should Give the Same Impression as a Live Demo:</strong> Video figures are used only to help reviewers evaluate the submissions. They should give the same impression as a live demo: a long computational pause can only be removed if its absence is made obvious through techniques such as a visual dissolve and a clear indication (verbal and/or visual) of how much time was removed; videos about technology mock-ups should be clearly indicated as such, and mock-ups should be avoided when the video is about an implemented system.</p>
+
+<p><strong>User Studies Are Not Required:</strong> The UIST community has discussed the role of empirical evaluations within HCI research, specifically user testing, and wishes to emphasize that user tests are not strictly required for UIST papers; rather, papers must support the claims they make with evidence. The form of that evidence will vary based on the claims of the paper. Authors should be careful not to make unsubstantiated claims for new techniques, systems, or applications that have not been tested. In general, authors and reviewers should consider what the appropriate method of validation is for the specific problem or research questions that their paper is addressing.</p>
+
+<p><strong>Systems Contributions Need To Be Evaluated Holistically:</strong> The UIST 2026 Papers Chairs ask authors to explicitly state their contributions, including claims and scientific evidence, and ask reviewers to perform a holistic evaluation of papers. In the technical HCI community, there is a long-standing debate around how systems contributions are and should be evaluated. Many researchers experienced with this type of contribution have suggested a number of ways in which they could be evaluated more holistically. Below we summarize the key points and ask both authors and reviewers to please familiarize themselves with this work by referring to the cited papers:</p>
+
+<ul>
+  <li>Just asking for usability testing is not adequate for evaluating complex systems. Neither is the search for “fatal flaws” or focusing on what the system does not do. A more holistic approach to evaluating systems research is required. Olsen established a set of heuristics such as the versatility of a system (flexibility), how it reduces effort on designers (expressive leverage), how well the system allows designers to express their design choices (expressive match), and scalability to new, larger problems.
+<br /> <a href="https://doi.org/10.1145/1294211.1294256">Daniel R. Olsen Jr. (UIST 2007), Evaluating User Interface Systems Research</a>.</li>
+  <li>Usability evaluation is important for some but not all user interface development situations. It is just one of many methods. It is important to consider whether usability evaluation would produce anything meaningful given the stage of system design. It is appropriate for settings with well-known tasks and outcomes, but system innovations will evolve and often lead to a change in everyday practice.
+<br /> <a href="https://dl.acm.org/doi/abs/10.1145/1357054.1357074">Saul Greenberg &amp; Bill Buxton (CHI 2008), Usability Evaluation Considered Harmful (Some of the Time)</a>.</li>
+  <li>Many different evaluation strategies are used and appropriate in the larger technical HCI community: (1) demonstration based on novel or replicated examples, based on case studies, or based on scenarios; (2) usage studies including usability studies, A/B comparisons, walkthrough demonstrations (show and tell rather than use and test), and observation, and take-home studies; (3) technical performance evaluations including benchmarking against thresholds or the state of the art; (4) heuristics using a checklist approach seeing whether individual heuristics are satisfied or discussion based on heuristics (e.g., Olsen’s UIST 2007 heuristics above).
+<a href="https://doi.org/10.1145/3173574.3173610">David Ledo, Steven Houben, Jo Vermeulen, Nicolai Marquard, Lora Oehlberg &amp; Saul Greenberg (CHI 2018), Evaluation Strategies for HCI Toolkit Research</a></li>
+  <li>Evaluating interactive systems research requires distinguishing (1) the code that implements a system and (2) the research contribution demonstrated or embodied in a system. For better understanding the wide range of possible systems contributions, we need to further distinguish (1) what a system accomplishes and (2) how it accomplishes that. In many systems contributions, code is used as a means to explore a research problem, while for some, but not all, the contribution manifests itself directly in the code (e.g., toolkit vs. algorithm).
+<br /> <a href="https://homes.cs.washington.edu/~jfogarty/publications/workshop-chi2017-codeandcontribution.pdf">James Fogarty (CHI 2017 #HCI.Tools Workshop), Code and Contribution in Interactive Systems Research</a></li>
+</ul>
+
+<p>If you are unsure about one of these requirements, please contact <a href="mailto:program2026@uist.org">program2026@uist.org</a>.</p>
+
+<h2 id="writing-guidelines">Writing Guidelines</h2>
+
+<h2 class="details" id="guidelines">Guidelines on How to Write a Successful UIST Paper</h2>
+
+<p>A good UIST submission will result in both an effective document for the proceedings and a good conference talk. As an author, you should ask yourself the following questions before writing your paper. Submissions that do not provide good answers to these questions are unlikely to be accepted.</p>
+
+<p><strong>What problem are you solving, or what opportunity are you seizing?</strong> What are the relevant published works in your problem area? What deficiencies in their solutions are you trying to overcome? How does the new solution differ from previously published results? How does it differ from commercial or other publicly available solutions? Do not expect the reviewers to know this information without your telling them in the paper, as they are unlikely to remember the precise details of all the relevant literature. Make specific comparisons between your work and that described in the references; don’t just compile a list of vaguely related papers. Poorly written discussions of related work can lead to paper rejection.</p>
+
+<p><strong>What were the previous solutions?</strong> What are the relevant published works in your problem area? What deficiencies in their solutions are you trying to overcome? How does the new solution differ from previously published results? How does it differ from commercial or other publicly available solutions? Do not expect the reviewers to know this information without your telling them in the paper, as they are unlikely to remember the precise details of all the relevant literature. Make specific comparisons between your work and that described in the references; don’t just compile a list of vaguely related papers. Poorly written discussions of related work can lead to paper rejection.</p>
+
+<p><strong>How well did you solve your problem?</strong> Based on your problem statement, what did you accomplish? You are responsible for demonstrating that the problem is solved. Include pictures, statistics, or whatever is required to make your case. If you find this part of the paper difficult to write, perhaps the work is not yet finished, and the paper should be deferred until next year.</p>
+
+<p><strong>What does this work contribute to the field?</strong> What are your new ideas or results? If you don’t have at least one new idea, you don’t have a publishable paper. Can your results be applied anywhere outside of your project? If not, the paper is probably too special-purpose for UIST. On the other hand, beware of trying to write a paper with too large a scope. Often the best papers are very specific in what they provide so as to deliver a concrete solution, and yet that solution has the power to generalize to other instances, situations, use cases, etc.</p>
+
+<p><strong>Is the paper complete?</strong> One question that often generates discussion at the Program Committee meeting is whether a paper is complete. If the paper presents an algorithm or technique, an experienced practitioner in the field should be able to implement it using the paper and its references. If the paper claims to present a faster or more efficient way of implementing an established technique, it must contain enough detail to redo the experiment on competing implementations. When you quote numbers, be sure that they do not lie; state clearly whether they were measured, simulated, or derived, and how you did the measurements, simulations, or derivations.</p>
+
+<p><strong>Does the paper contain too much information?</strong> A paper should be as succinct as possible. A long, poorly written paper will likely be rejected. If you have solved a single, practical problem, don’t try to generalize it for the purposes of publication. If you have a formal theory or elaborate architecture, don’t include all the vagaries of the implementation unless they are critical to the utility of the theory. Don’t include the contents of your user’s manual; instead, describe the model or functionality achieved. You should assume your audience has a working knowledge of user interface development and access to the major journals in computer science, electrical engineering, and psychology. A conference paper can only present a few concise ideas well.</p>
+
+<p><strong>Can this paper be presented well?</strong> While UIST papers are judged primarily as technical papers, some consideration is given to how suitable the topic is for a conference presentation. Think of how you would present your ideas and how big the audience would be. Papers that have a small number of concisely stated new ideas and that are visually interesting tend to appeal to a large audience and be easy to present. As recent conferences clearly show, these criteria do not eliminate papers that have taxonomies or strong theoretical content, or that appeal to a specialized audience, as long as they contain significant new ideas.</p>
+
+<p><strong>Production Quality:</strong> It is very important to put effort into the production of your paper. A paper that shows effort will likely induce a reviewer to put effort into their reviews. On the other hand, when the author appears to have put little effort or thought into the production of a paper, the reviewer will not be motivated to read the paper carefully and produce a good review. There is no excuse for spelling mistakes in papers. A large number of misspelled words in a paper indicates to the reviewer that the author didn’t care enough about his or her paper to run a spell checker on it. With this attitude on the part of the author, why should the reviewer bother doing a good job? The same goes for missing references, mislabeled or illegible figures, wrong format, and other trivial problems that could be caught by careful proofreading. Don’t expect reviewers to read your paper carefully if you are not willing to read it carefully first!</p>
+
+<p><strong>Generative AI:</strong> Authors should avoid generating content using AI agents (e.g., LLMs such as ChatGPT or similar), but the usage of these tools is allowed for editing and checking the author’s own text: this ensures that non-native English-speaking authors can also create high-quality texts, while avoiding the issue of hallucinated results, concepts, and citations. See <a href="https://www.acm.org/publications/policies/frequently-asked-questions">the ACM guidelines for more information<i class="fa fa-external-link" aria-hidden="true" style="padding-left: 5px;"></i></a>.</p>
+
+<p><strong>Citations and references:</strong> Papers should adequately cite works related to them, however this should be thoughtfully done. Preferably, citations should be peer-reviewed (use arXiv sources only for cutting edge works that have not been published elsewhere, and use these sparingly), and should be discussed in enough detail to clarify their relationship to the present work (avoid citations like [23, 25, 26, 37-45, 68]).</p>
+
+<p><strong>Don’t Wait Until the Last Minute:</strong> The submission site will close on <strong>March 31, 2026 AoE</strong>. This gives you weeks as of this writing to submit your paper. Rushing to submit on the day of the submission deadline will only create additional stress. Moreover, a rushed submission is likely to have errors and production problems. In some cases, technical issues with the submission site may cause you to miss the deadline. With a long submission window, consider submitting your work as late as 24 hours before the deadline, and spend the remaining time correcting any typos or grammatical errors.</p>
+
+<p><strong>Resubmitting Rejected Papers:</strong> Has this paper been submitted to a conference before and been rejected? If this is the case, carefully think before you submit it again! There must have been some reason(s) why the paper was rejected. (Yes, we all blame bad reviews, but there must also have been some other reason.) Read previous reviewers’ comments and try to determine what they would like to see changed, and then make those changes. There is a good chance that a resubmitted paper will be reviewed again by a reviewer who gave it a poor rating before (or who recalled the deliberations over your previous submission in the Program Committee meeting of another conference.) If the paper has not been changed to reflect the reviewers’ comments, it is likely that your paper will get an even lower rating. Yes, sometimes the reviewers’ comments are wrong (reviewers are only human, after all,) but this usually implies that you need to write more clearly or provide more evidence for your claims. Each of us has received what we originally considered to be bad reviews on some paper, but after calm consideration (weeks or even months later) realized that these reviews pointed out real faults in our paper. If a hand-picked reviewer is confused about what you are saying, the chances are good that the average reader will also be confused. If you are resubmitting, we encourage you to also include the details of your changes as supplemental information. Having past reviews, previous versions, and a list of changes will help reviewers (which may very well be the same ones) understand your improvements and how you addressed previous concerns.</p>
+
+<p><strong>Let It Sit:</strong> A highly recommended technique is to write the paper, and let it sit on your desk for a week or two. Then go back and read the paper as if you were a reviewer who doesn’t know the author. While you are writing a paper, you are too closely tied to the work to be able to criticize it effectively. After a break of a week or two, you will be much more objective and may see organizational problems that weren’t evident when you were actively working on the paper.</p>
+
+<p><strong>In-House Review:</strong> Another strategy you can use to improve the overall quality of your paper is to have your own colleagues do an “in-house” review of it before you submit it to the conference for formal review. That requires beginning far enough in advance of the deadline that you have a protective cushion in your schedule.</p>
+
+<p><strong>Summary:</strong> Given that UIST is one of the premier forums for innovations in human-computer interaction, the review process is always going to be highly competitive. Acceptance rates have historically been in the 20–25% range, amongst a very competitive field of submissions. Writing a submission for UIST is a lot of work, but it is rewarded with the visibility and influence that UIST offers. We hope this document has helped give you some clear and concrete guidance on how to write a successful UIST submission.</p>
+
+<h2 id="accessibility-guidelines">Accessibility Guidelines</h2>
+
+<h2 class="details" id="accessible">Guidelines on Preparing Accessible Submissions</h2>
+
+<p>UIST 2021 introduced tiered deadlines, which were set up based on our continued commitment to accessibility and on feedback from the larger UIST community. Authors and reviewers generally liked this format so we will be continuing with this for UIST 2026. First, you are asked to submit your abstract, then the paper PDF, and finally Alt-Text and your optional video. This means there is more time after the paper submissions to upload your optional video and make your submission accessible, including alt-text and video subtitles. We believe these changes will overall help increase the quality of the conference. Below, we provide more information and resources to guide you through the process.</p>
+
+<p><strong>Alt-Text:</strong> To make the reviewing process more accessible, we ask you to provide Alt-Text (alternative text) for every figure, subfigure, and table in your document. Clearly start each line with the Figure identifier in the following format ‘Figure #.#’ followed by the Alt-Text for that figure followed by two new lines between each figure or subfigure. For more information on writing quality Alt-Text, please read the <a href="https://www.sigaccess.org/welcome-to-sigaccess/resources/describing-figures/">SIGACCESS guidelines</a>.</p>
+
+<p><strong>Video Subtitles:</strong> There are many ways to create subtitles for videos. One popular way is by uploading the video to YouTube and having YouTube automatically generate subtitles. You can keep the video private or unlisted and delete it immediately after.
+<!--
+Jeremy: commenting because video page is not approved yet
+See the Closed Captions (CC) / subtitles section in the [UIST Video Guidelines](/2026/videos-and-video-previews/#technical).
+--></p>
+
+<p><strong>Accessible PDF:</strong> For the final submission deadline, you have the option to submit an accessible version of your paper PDF following the <a href="https://www.sigaccess.org/welcome-to-sigaccess/resources/accessible-pdf-author-guide/">SIGACCESS guidelines</a>. This PDF may be used by reviewers. However, this updated PDF should only include changes to improve accessibility.</p>
+
+<h2 id="process-overview">Process Overview</h2>
+
+<h2 class="details" id="process">An Explanation on the Review, Rebuttal, and Camera-Ready Process</h2>
+
+<h3 id="review-process">Review Process</h3>
+
+<p><strong>Associate Chairs and External Reviewers:</strong> Each paper submitted for review will be seen by at least four different people (2 program committee members (1AC, 2AC) and 2 external reviewers (R1, R2), i.e. experts in the area who are not on the program committee). The 1AC knows the identities of the authors of the paper. The 2AC and external reviewers do not know the identities of the authors.</p>
+
+<p><strong>Assignment of Program Committee Members (1AC, 2AC):</strong> In the week following the submission deadline, the Program Chairs will assign each submitted paper to a primary reviewer (1AC) and a secondary reviewer (2AC) who are both members of the program committee.</p>
+
+<p><strong>Desk Rejections:</strong> The primary reviewer may, upon conferring with the secondary reviewer and the program chairs, recommend a paper be rejected without additional reviews. Desk rejects will only occur for papers that are clearly off-topic for UIST, if they are incomplete, if they violate rules of this Author’s Guide, or if they are discovered to have been published previously or to have been submitted concurrently at another conference or journal.</p>
+
+<p><strong>Assisted Desk Rejections:</strong> A paper may be assisted desk rejected if the primary and secondary AC agree that the paper’s contribution is clearly incommensurate with its length; if the paper does not contextualize its work within the UIST and HCI literature; if the paper clearly does not include enough details or data to back up its claims; if the paper clearly solves a problem that is known to be solved already, or if it does not cite (and the authors seem unaware of) important prior work on the same problem and doesn’t address how it is different; or if it has no evaluation via proof, experiment, or analysis when such is required; if it is solving a problem sufficiently minor that the senior primary and secondary reviewer do not believe that it belongs in the program; if its overall level of quality is clearly not appropriate for UIST; or if it addresses a topic that is clearly outside the realm of UIST or HCI. Assisted desk rejects are processed in collaboration between the two ACs assigned to a paper as well as the Program Chairs.</p>
+
+<p><strong>Assignment of External Reviewers (R1,R2):</strong> Each paper submitted for review will be seen by at least four different people (2 external reviewers (R1,R2) and 2 program committee members (1AC, 2AC)). The primary reviewer (1AC) distributes each paper to two external experts.</p>
+
+<p><strong>External Reviewers Write Reviews:</strong> First, the two external reviewers and the 2AC will write full reviews. Note that the 2AC is required to write a full personal review, not a meta-review, and will not be able to see the external reviews before they submit their own.</p>
+
+<p><strong>Primary Meta-Review (1AC):</strong> After the 2AC and external reviews are submitted, the 1AC will summarize the reviewer sentiment in a meta-review. This meta-review should be based on the 2AC’s and external reviews, but may also include a personal review of the 1AC. If there is substantial disagreement among the external reviewers, the 1AC is required to prepare a full personal review of the paper.</p>
+
+<p><strong>Discussion:</strong> Between review submissions and the program committee meeting, the 1AC may elect to begin a discussion amongst the reviewers to clarify reviews and strive for consensus.</p>
+
+<h3 id="rebuttal-process">Rebuttal Process</h3>
+
+<p>Authors of papers have about a week to submit a rebuttal if they feel that the reviewers have made substantive or factual errors, to clarify concerns or uncertainties, or to answer specific questions raised by the reviewers. The rebuttal is confined to 5000 characters in length and must be self-contained. The rebuttal is for responding to specific questions for clarification raised by reviewers. It may include novel material as long as it can be fit into the rebuttal length. External links, e.g., to video material or additional data, are not allowed unless explicitly requested by an AC. Since the 2AC and external reviewers do not know the names of the authors, the authors should maintain their anonymity in the rebuttal.</p>
+
+<p>Starting with UIST 2021, we have removed the rebuttal score cut-off. This will enable more controversial papers to participate in the full review process. Associate Chairs will gauge the reviews and internal discussion to determine whether a rebuttal is encouraged, and they will clearly state so in their meta-reviews. For papers where the consensus is that a rebuttal is very unlikely to impact the reviews, the Associate Chairs will likewise be asked to indicate this in their reviews.</p>
+
+<p><strong>Post-Rebuttal Discussion:</strong> After the rebuttal has been submitted, the program committee members (1AC, 2AC) and externals (R1, R2) will read the rebuttals, confer about the papers, and prepare a recommendation for the program committee meeting. Since the external reviewers do not know the authors’ and each other’s identities, they must maintain anonymity during all online discussions. The preliminary recommendation agreed on at this stage will be either accept, reject, or if agreement on a recommendation cannot be reached, a third option is to table the paper for further review and discussion at the program committee meeting.</p>
+
+<p><strong>Post-Rebuttal Meta Reviews:</strong> After the discussion, the primary reviewer (1AC) will revise the meta-review, taking into account the rebuttal. In some cases, a third reviewer from the program committee (3AC) may be assigned based on requests by the 1AC and 2AC.</p>
+
+<p><strong>Program Committee Meeting:</strong> All members of the program committee meet at the program committee meeting to determine the acceptance or rejection of each paper. In cases where a consensus on a paper was not reached during the pre-meeting discussion phase, additional committee members may read the paper (3AC, 4AC), and their evaluations will be taken into account in the decision.</p>
+
+<p><strong>Notification of Decision:</strong> After the program committee meeting, authors will be informed if their paper was rejected or conditionally accepted. Full reviews, which may have changed due to the rebuttal, online discussion, or discussion at the committee meeting, will be sent via email a few days later to provide additional context for the decision and guidance for improving the paper. Conditionally accepted papers need to go through the camera-ready process as described in the next section, i.e., need to be improved based on the changes described in the rebuttal before final acceptance.</p>
+
+<p>A very small number of papers may be chosen by the program committee to be shepherded. These papers usually make compelling contributions but require more substantial changes to meet the bar for acceptance than conditionally accepted papers. For these papers, an AC, who is generally either the 1AC or 2AC, will be assigned as a shepherd and will initiate a separate review process with the authors to make sure the paper meets the bar for acceptance before the camera-ready deadline.</p>
+
+<h3 id="camera-ready">Camera-Ready</h3>
+
+<p><strong>Integrating Requested Changes into the Paper:</strong> All acceptance notifications emailed out after the program committee meeting are conditional pending changes as outlined by the authors in the rebuttal and any additional changes the program committee may suggest for the camera-ready version. After authors upload their revised paper (first submitted to the TAPS system), the 1AC will check that all changes have been made and that required changes have not compromised the paper in any way. Only when the 1AC confirms that everything is in order, will the paper be accepted for final publication. Papers that do not satisfy the reviewer requests or that are not uploaded in the final form by the camera-ready deadline will be rejected.</p>
+
+<p><strong>Selecting a Copyright Option:</strong> ACM now requires and helps authors ensure that all articles are open access, so there are no more options for copyright (although, in some cases, you will have to pay a fee to publish). More details are available on the <a href="https://libraries.acm.org/subscriptions-access/acmopen">ACM Open page<i class="fa fa-external-link" aria-hidden="true" style="padding-left: 5px;"></i></a>. The SIGCHI Submitter Agreement also requires that authors hold copyright to the content of their submission and will obtain appropriate permissions for any portions of the content that are copyrighted by others.</p>
+
+<p><strong>Publication and Public Dissemination Date:</strong> Papers will be made available publicly in the ACM DL a week in advance of the conference. Any internal approvals and intellectual property obligations may need to be completed by this date.</p>
+
+<p><strong>Preparing the Conference Presentation:</strong> All papers will have the same presentation time at the conference, and there will be no distinction made between papers based on their length. The exact talk duration will be determined when the program is finalized, and the total number of papers is known.</p>
+
+<!--
+Jeremy: commenting out because accessibility page has not been finalized (just copied draft version)
+**Accessibility:** Alt text is required to be provided for every figure, subfigure, and table in your camera ready document as noted above (link to the above section on Guidelines for Preparing Accessibile Submissions). UIST will be contracting with APTARA to add accessible tagging and alt text to the final PDFs as part of the TAPS workflow; thus, authors will not be required to tag the final camera ready version of the document themselves. However, if authors would like to tag the document themselves, please follow the Guidelines at [Making PDFs Accessible](/2026/accessibility/#pdf), and notify the accessibility chairs at [accessibility2024@uist.org](mailto:accessibility2024@uist.org) that you would like to add your own accessibility tagging. Guidelines are also provided for making [videos](/2026/accessibility/#video) and [presentations](/2026/accessibility/#presentation) accessible.
+-->
+
+<h2 class="details">History</h2>
+<p>This document was last updated in January 2026 by Clemens Nylandsted Klokmose and Valkyrie Savage who inherited it from  Andrea Bianchi and Elena Glassman who inherited by Jürgen Steimle and Nathalie Henry Riche who inherited it from Eytan Adar and Vidya Setlur who inherited it from Ranjitha Kumar and Michael Nebeling who inherited it from Fanny Chevalier and Stefanie Muller who inherited from Michael Bernstein and Katharina Reinecke, who inherited from Andrew Wilson, who inherited from Chris Harrison and Jen Mankoff, who inherited it from Jacob O. Wobbrock and Daniel Avrahami, who inherited it from Tovi Grossman and Bjoern Hartmann, who inherited it from Mira Dontcheva and Daniel Wigdor, who inherited it from Ivan Poupyrev and Takeo Igarashi, who inherited it from Hrvoje Benko and Celine Latulipe, who inherited it from Maneesh Agrawala and Scott Klemmer (who used material provided by Saul Greenberg), who inherited it from Francois Guimbretiere, who inherited it from Michel Beaudouin-Lafon, who inherited it from Ravin Balakrishnan and Chia Shen, who inherited it from Ken Hinckley and Pierre Wellner, who inherited it from Dan Olsen, who inherited it from Steve Feiner, who inherited it from Joe Konstan, who inherited it from Michel Beaudouin-Lafon, who inherited it from Ari Rapkin, who inherited it from Beth Mynatt, who inherited it from George Robertson, who inherited it from Marc H. Brown, who inherited it from George Robertson, who got lots of help on it from Steve Feiner, Brad Myers, Jock Mackinlay, Mark Green, Randy Pausch, Pierre Wellner, and Beth Mynatt.</p>
+
+
+  <footer class="site-footer my-5"><span class="text-end">&copy; 2026 ACM SIGCHI.</span> Logo/iconography designed by <a
+                href="https://www.shuhong-hci.com">Shuhong Wang</a>. Detroit photography from <a
+                href="https://visitdetroit.com/">Visit Detroit</a>.</footer>
+</main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,2 @@
+RewriteEngine on
+ErrorDocument 404 /uist2026/404.html

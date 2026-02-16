@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  
+  <title>UIST 2026 - Call for Participation</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Cache-control" content="public" />
+  <meta http-equiv="content-type" content="text/html" />
+  <link rel="icon" href="/2026/favicon.ico?v=3" type="image/x-icon" />
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous" defer></script> -->
+  <link rel="stylesheet" href="/2026/assets/style.css?v=2" />
+  <script src="/2026/assets/js/color-modes.js"></script>
+</head>
+
+<body>
+
+  <a class="sr-only sr-only-focusable" href="#main-content">Skip to main content</a>
+
+<!-- DEBUG: page.url = '/cfp/' -->
+<nav class="navbar fixed-top navbar-expand-lg" id="myTopnav">
+    <div class="container ">
+        <a class="navbar-brand nav-link " href="/2026/"><img
+                src="/2026/assets/images/uist_26_logo.png" id="navbar-logo"
+                data-light-src="/2026/assets/images/uist_26_logo_light_bg.png"
+                data-dark-src="/2026/assets/images/uist_26_logo.png" alt="UIST 2026 Home"
+                style="height: 45px" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav nav nav-underline ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="/2026/cfp">Full CFP</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="/2026/sponsors">For
+                        Sponsors</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link "
+                        href="/2026/organizers">Organizers</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        More Info
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="/2026/archive/">UIST Archive</a></li>
+                        <li><a class="dropdown-item" href="/2025/">Previous Year (UIST 2025)</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <button class="nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center" id="bd-theme"
+                        type="button" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static"
+                        aria-label="Toggle theme (auto)">
+                        <i class="fas fa-circle-half-stroke my-1 theme-icon-active"></i>
+                        <span class="d-lg-none ms-2" id="bd-theme-text">Toggle theme</span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
+                        <li class="dropdown-item" data-bs-theme-value="light" aria-pressed="false">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-sun me-2 opacity-50 theme-icon" data-theme-icon="fa-sun"></i>
+                                Light
+                                <i class="fas fa-check ms-auto d-none"></i>
+                            </div>
+                        </li>
+                        <li class="dropdown-item" data-bs-theme-value="dark" aria-pressed="false">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-moon me-2 opacity-50 theme-icon" data-theme-icon="fa-moon"></i>
+                                Dark
+                                <i class="fas fa-check ms-auto d-none"></i>
+                            </div>
+                        </li>
+                        <li class="dropdown-item" data-bs-theme-value="auto" aria-pressed="true">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-circle-half-stroke me-2 opacity-50 theme-icon"
+                                    data-theme-icon="fa-circle-half-stroke"></i>
+                                Auto
+                                <i class="fas fa-check ms-auto d-none"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<!-- <div class="logo-area" style="height: 200px;">
+  <div class="logo-bg"></div>
+</div> -->
+<div class="logo-area" style="height: 0px;">
+  <div class="logo-bg"></div>
+</div>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.min.js" defer></script>
+<script src="/2026/assets/js/subCanvas.js" defer></script> -->
+
+
+
+<main id="main-content" class="container ">
+  <span id="cursor"></span>
+<script type="text/javascript" src="/2026/assets/js/scroll-progress.min.js" defer></script>
+<script type="text/javascript" src="/2026/assets/js/initScroll.js?v=2" defer></script>
+
+<style>
+#markdown-toc { width: 240px; }
+</style>
+
+
+<!-- # <i class="fa-regular fa-file-lines"></i> Call for Participation -->
+
+<h1 id="call-for-participation">Call for Participation</h1>
+
+<div class="content-layout">
+
+  <!-- * This line needed for rendering table of contents/scrollspy. -->
+  <!-- {:toc} -->
+
+  <h2>Deadlines</h2>
+
+  <p class="section">
+Note: all deadlines are at 11:59pm AoE.
+</p>
+
+  <table class="dates">
+<tbody>
+    <tr>
+    <td><a href="#papers">Papers (abstract)</a></td>
+    <td>
+    Tuesday, March 24th, 2026
+    </td>
+    </tr>
+    <tr>
+    <td><a href="#papers">Papers (paper PDF)</a></td>
+    <td>
+    Tuesday, March 31st, 2026
+    </td>
+    </tr>
+    <tr>
+    <td><a href="#papers">Papers (materials) <br />
+    <span style="font-weight:400; font-size: .8rem">incl. Videos, Supplementary materials, Accessibility alt-text and video subtitles</span></a></td>
+    <td>
+    Thursday, April 9th, 2026
+    </td>
+    </tr>
+    <tr>
+    <td><a href="#posters">Posters</a></td>
+    <td>July 10th, 2026</td>
+    </tr>
+    <tr>
+    <td><a href="#demos">Demos</a></td>
+    <td>July 10th, 2026</td>
+    </tr>
+    <tr>
+    <td><a href="#doctoral-symposium">Doctoral Symposium</a></td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td><a href="#workshops">Workshops</a></td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td><a href="#visions">Visions</a></td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td><a href="#lasting-impact">Lasting Impact</a></td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td><a href="#sic">Student Innovation Contest</a></td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td><a href="#student-volunteer">Student Volunteers</a></td>
+    <td>TBD</td>
+    </tr>
+
+</tbody>
+</table>
+
+  <!-- <a  href="/2026/author-guide" ><button class="hover-arrow">UIST 2026 Author Guide</button></a> -->
+
+  <p><span id="paper"></span></p>
+
+  <h2 id="papers">Papers</h2>
+
+  <!-- <p class="section"> -->
+
+  <p>Papers are the main medium for conveying new research results at UIST and must describe original, unpublished work.
+For questions, please email the program chairs at <a href="mailto:program2026@uist.org">program2026@uist.org</a>.</p>
+
+  <!-- </p> -->
+
+  <p class="section">
+Note: all deadlines are at 11:59pm AoE.
+</p>
+
+  <table class="dates">
+<tbody>
+    <tr>
+    <td>Abstract due <br /> <span style="font-weight:400; font-size: .8rem; padding-top:0px">incl. title, abstract, author list</span></td>
+    <td>
+    <div>Tuesday, March 24th, 2026 </div>
+    </td>
+    </tr>
+    <tr>
+    <td>Papers due (Paper PDF)</td>
+    <td>
+    <div>Tuesday, March 31st, 2026</div>
+    </td>
+    </tr>
+    <tr>
+    <td><a href="#papers">Materials due <br />
+    <span style="font-weight:400; font-size: .8rem; padding-top:0px">incl. videos, supplementary materials, accessibility alt-text and video subtitles</span></a></td>
+    <td>
+    <div>Thursday, April 9th, 2026</div>
+    </td>
+    </tr>
+    <tr><td>Initial reviews sent to authors</td>
+    <td>
+    <div>Thursday, May 28th, 2026</div>
+    </td>
+    </tr>
+    <tr>
+    <td>Rebuttals due</td>
+    <td>
+    <div>Friday, June 5th, 2026</div>
+    </td>
+    </tr>
+    <tr>
+    <td><a href="#papers">Decisions sent to authors
+(conditional accept or reject)
+</a></td>
+    <td>
+    <div>Saturday, June 27th, 2026</div>
+    </td>
+    </tr>
+    <tr>
+    <td>Final reviews sent to authors</td>
+    <td>
+    <div>Friday, July 3rd, 2026</div>
+    </td>
+    </tr>
+    <tr>
+    <td>Upload to the <strong>PCS</strong></td>
+    <td>
+    <div>TBD</div>
+    </td>
+    </tr>
+    <tr>
+    <td> Upload to <strong>TAPS</strong></td>
+    <td>
+    <div>Friday, July 24th, 2026</div>
+    </td>
+    </tr>
+     <tr>
+    <td>Final acceptance decision</td>
+    <td>
+    <div>Friday, July 31st, 2026</div>
+    </td>
+    </tr>
+    <tr>
+    <td>Video preview due</td>
+    <td>
+    <div>TBD</div>
+    </td>
+    </tr>
+</tbody>
+</table>
+
+  <p><a href="https://new.precisionconference.com/submissions" target="_blank"><button class="hover-arrow">PCS Submissions Page (not yet open for submissions)</button></a></p>
+
+  <h3>Important update on ACMs new open access publishing model for 2026 ACM Conferences!</h3>
+  <p>Starting January 1, 2026, ACM will fully transition to Open Access. All ACM publications, including those from ACM-sponsored conferences, will be 100% Open Access. Authors will have two primary options for publishing Open Access articles with ACM: the ACM Open institutional model or by paying Article Processing Charges (APCs). With over 1,800 institutions already part of ACM Open, the majority of ACM-sponsored conference papers will not require APCs from authors or conferences (currently, around 70-75%).
+Authors from institutions not participating in ACM Open will need to pay an APC to publish their papers, unless they qualify for a financial or discretionary waiver. To find out whether an APC applies to your article, please consult the list of <a href="https://libraries.acm.org/acmopen/open-participants">participating institutions<i class="fa fa-external-link" aria-hidden="true" style="padding-left: 5px;"></i></a> in ACM Open and review the <a href="https://www.acm.org/publications/policies/policy-on-open-access-apc-waivers-and-discounts">APC Waivers and Discounts Policy<i class="fa fa-external-link" aria-hidden="true" style="padding-left: 5px;"></i></a>. Keep in mind that waivers are rare and are granted based on specific criteria set by ACM.
+ Understanding that this change could present financial challenges, ACM has approved a temporary subsidy for 2026 to ease the transition and allow more time for institutions to join ACM Open. The subsidy will offer:</p>
+  <ul>
+<li>$250 APC for ACM/SIG members</li>
+<li>$350 for non-members</li>
+</ul>
+  <p>This represents a 65% discount, funded directly by ACM. Authors are encouraged to help advocate for their institutions to join ACM Open during this transition period.
+This temporary subsidized pricing will apply to all conferences scheduled for 2026.</p>
+
+  <h3>Submission Formatting Guidelines for UIST 2026</h3>
+  <p><strong>UIST 2026 will have a page limit instead of a word limit. Therefore, we ONLY accept submissions in the 2-column format.</strong> We understand that this means authors working in Word may require additional help as they prepare their camera-ready documents; the Proceedings and Accessibility Chairs can assist in coordinating this (<a href="mailto:proceedings2026@uist.org">proceedings2026@uist.org</a>, <a href="mailto:accessibility2026@uist.org">accessibility2026@uist.org</a>).</p>
+
+  <p><strong>Your submission must be original</strong>. UIST only accepts original submissions. This means that your submission cannot have been published in another peer-reviewed venue or be under concurrent review at another peer-reviewed venue. Similarly, if you make multiple submissions to UIST 2026 Papers, their contributions must be distinct &amp; self-contained from each other. Please refer to the <a href="/2026/author-guide/">author guide <i class="fa fa-external-link" aria-hidden="true" style="padding-left: 5px;"></i></a> for details. Additionally, authors should avoid generating content using AI agents (e.g., LLMs such as ChatGPT or similar), but the usage of these tools is allowed for editing and checking the author’s own text.
+<strong>Revised Papers from Prior Submissions:</strong> To ensure consistency of the review process, we encourage authors of previously rejected papers to upload the prior version of the paper, corresponding reviews, and summary of changes from the last round of submission as part of the UIST 2026 paper submission process.</p>
+
+  <h3>Submission Information</h3>
+
+  <div class="flex-container">
+
+<div class="flex-title">Submission Platform</div>
+<div class="flex-content">
+<ul>
+<li>All required materials must be submitted electronically to  <a href="http://new.precisionconference.com/~sigchi" target="_blank">PCS <i class="fa fa-external-link" aria-hidden="true" style="padding-left: 5px;"></i></a> by the abstract and paper deadline.
+</li>
+<li>In PCS, first click “Submissions” at the top of the page, from the dropdown menus for society, conference, and track select “SIGCHI”, “UIST 2026” and “UIST 2026 Papers”, respectively, and press “Go.” This track will be opened a few weeks before the submission deadline.
+</li>
+</ul>
+</div>
+
+<div class="flex-title">Submission Format and Length</div>
+<div class="flex-content">
+<ul>
+<li>Required Paper PDF and source files</li>
+<li><a href="https://www.acm.org/publications/taps/word-template-workflow" target="_blank"><b>We will adopt the ACM TAPS Workflow</b> <i class="fa fa-external-link" aria-hidden="true" style="padding-left: 5px;"></i></a>.</li>
+<li> For <b>LaTeX authors</b>, submissions should be in the <b>double-column format</b> (<a target="_blank" rel="noopener noreferrer" href="/2026/assets/files/latex-two-column-submission-sample.pdf">example PDF <i class="fa fa-external-link" aria-hidden="true" style="padding-left: 5px;"></i></a>) using <code>\documentclass[sigconf,review,anonymous]{acmart}</code>. (please use the <a href="https://portalparts.acm.org/hippo/latex_templates/acmart-primary.zip" target="_blank" rel="noopener noreferrer">downloadable LaTex template  <i class="fa fa-external-link" aria-hidden="true" style="padding-left: 5px;"></i></a> or the <a href="https://www.overleaf.com/latex/templates/acm-conference-proceedings-master-template/pnrfvrrdbfwt" target="_blank" rel="noopener noreferrer">Overleaf template <i class="fa fa-external-link" aria-hidden="true" style="padding-left: 5px;"></i></a>). </li>
+
+<li> For <strong>Word authors</strong>, submissions should be in the double-column format (<a target="_blank" rel="noopener noreferrer" href="/2026/assets/files/word-two-column-submission-sample.docx">submission template <i class="fa fa-external-link" aria-hidden="true" style="padding-left: 5px;"></i></a>, <a target="_blank" rel="noopener noreferrer" href="/2026/assets/files/word-two-column-submission-sample.pdf">example PDF <i class="fa fa-external-link" aria-hidden="true" style="padding-left: 5px;"></i></a>).
+</li>
+<li><strong>Page limit</strong>: UIST papers can either be standard length papers <strong>(10 pages)</strong> OR short papers <strong>(5 pages)</strong>. A standard length paper represents a substantial contribution which has been thoroughly explored. A short paper represents a smaller contribution which has been thoroughly explored: short papers are NOT works-in-progress. A new idea presented in a compact format is more likely to be accepted than the same idea in a long format, and shorter, more focused papers are encouraged.<ul><li>After rebuttal and conditional acceptance, authors may add up to 10% of the length of their paper in addressing reviewers’ requests (i.e., up to 1 extra page for a standard length paper, up to 0.5 extra page for a short paper).</li></ul></li>
+<li> <b>References</b> and <b>appendices</b> are excluded from the page count, but should be included in the submitted PDF.
+</li>
+
+<li>Size: &lt; <b>20 MB</b> (compressed PDF files are encouraged during submission)</li>
+<!-- <li>Please make <b>appendices as separate PDF files</b> and upload them as supplementary materials instead of including them as a subsection at the end of the original paper manuscript.</li> -->
+</ul>
+</div>
+
+<div class="flex-title">Accompanying Video</div>
+<div class="flex-content">
+<ul>
+<li> Optional, but highly encouraged</li>
+<li> Resolution of 1080p (1920 x 1080) or 4k (3840 x 2160 px), encoded as MP4 using the H.264 codec</li>
+<li> No more than 5 minutes long</li>
+<li>Size: &lt; 250 MB</li>
+<li>Subtitles are required using a separate .srt or .sbv file</li>
+</ul>
+</div>
+
+<div class="flex-title">Maximum File Size</div>
+<div class="flex-content">
+<ul>
+<li>
+Maximum total size for all files &lt; 300 MB
+</li>
+</ul>
+</div>
+
+<div class="flex-title">Anonymity</div>
+
+<div class="flex-content">
+<ul>
+<li>Anonymous, i.e. authors must remove their names and affiliations throughout all submission materials (paper, videos, supplementary material) <a href="/2026/author-guide/#anonymity"> <span style="white-space: nowrap;">(anonymity policy <i class="fa fa-external-link" aria-hidden="true" style="padding-left: 5px;"></i>)</span></a></li>
+<li>Discuss your own prior work in 3rd person and include a full reference with names.</li>
+</ul>
+</div>
+
+<div class="flex-title">Selection Process</div>
+
+<div class="flex-content">
+<ul>
+<li>
+Refereed, i.e. the program committee and two external reviewers will review submitted papers
+</li>
+</ul>
+</div>
+
+<div class="flex-title">Publication</div>
+<div class="flex-content">
+<ul>
+<li>
+Archival, i.e. accepted papers will be published in the ACM Digital Library and distributed in digital form to conference attendees
+</li>
+</ul>
+</div>
+
+<div class="flex-title">Desk Rejection / Assisted Desk Rejection policy</div>
+<div class="flex-content">
+<ul>
+<li>
+<strong> Papers, where the length is incommensurate with contribution or the stated length of the submission (i.e., short paper vs. standard length papers), will be desk rejected. </strong> Submissions of more than 5 pages for short papers or 10 pages for standard papers will be desk rejected if their length is not justified.
+</li>
+<li>
+<strong>Anonymization Policy.</strong> Authors are expected to anonymize their identities in the body of the paper but leave citations to their previous work unanonymized so that reviewers can ensure that all previous research has been taken into account by the authors. Authors are required to cite their own work in the third person, e.g., avoid “As described in our previous work [10], …” and use instead “As described by Chetty et al. [10], …”. Papers that violate the anonymization policy by <i>explicitly and unequivocally identifying the authors</i> (i.e., beyond allowing the reviewers to simply "guess"), including within the supplemental materials or external links to datasets, code repositories, etc., will be desk rejected. Any supplementary material (including the video) should also adhere to the anonymity rule.
+</li>
+<li>
+Your submission must be original; it cannot be published or under concurrent review elsewhere. <strong>If you have any concurrent submissions to UIST or other venues that are closely related</strong> – i.e., are based on the same study, artifact, or dataset – <strong>you must include an anonymized version of that submission to the concurrent submissions field.</strong> Failure to do so will result in desk rejection. Please see <a href="https://www.acm.org/publications/policies/simultaneous-submissions"> ACM guide on prior and simultaneous submissions <i class="fa fa-external-link" aria-hidden="true" style="padding-left: 5px;"></i></a>.
+</li>
+<li>
+<strong>Research Quality and Lack of Relevant Context:</strong> Papers must include sufficient detail for reviewers to evaluate research quality according to the norms and expectations of the UIST community. Papers should demonstrate clear connections to existing research literature in HCI and related fields, showing how the work builds upon or relates to prior work. <strong>Papers that lack adequate methodological details for proper evaluation, or that fail to engage with relevant prior research, may be desk rejected.</strong>
+</li>
+<li>
+Your paper must be stand alone. Authors are encouraged to provide supplementary materials to support practices around research reproducibility as much as possible, however all important information to understand the contributions of your work must be in the main paper PDF. <strong>Heavy reliance on appendices and/or supplementary materials can be a ground for rejection including desk rejection.</strong>
+</li>
+<li>
+<strong>Please ensure that you use the correct template and correct formatting of references.</strong> We require submitted papers to be in the 2-column format. Use of other templates or formats, including different citation styles, may result in desk rejection.</li>
+<li>
+Similar to CHI 2026, we will also be implementing <a href="https://chi2026.acm.org/2025/08/08/revised-chi-2026-papers-desk-reject-process/"> Assisted Desk Rejection<i class="fa fa-external-link" aria-hidden="true" style="padding-left: 5px;"></i></a> —a process in which a paper is collaboratively determined by ACs and Program Chairs as not suitable for peer review—for papers that feature any of the following issues:
+<ul>
+<li><strong>Grossly insufficient literature review</strong> to contextualize and/or evaluate the proposed novelty/contribution to HCI. This is not to say that all papers must cite other UIST papers, but papers should cite scholarly literature that relates to HCI in some way. </li>
+<li><strong>Grossly insufficient details provided </strong>to demonstrate research and methodological transparency and clarity, including insufficient conceptual or argumentative clarity and/or insufficient recounting of methodology.</li>
+<li><strong>Grossly insufficient data </strong>to validate the analysis to support the claim.</li>
+<li><strong>HCI contribution is much too small given the length </strong>of the submitted paper: a standard length paper making a very small contribution may be desk rejected, as paper length should be commensurate with the size of the contribution.</li>
+</ul>
+</li>
+</ul>
+</div>
+
+<div class="flex-title">Final Publication Format</div>
+<div class="flex-content">
+<ul>
+<li>
+As required by the TAPS workflow, camera-ready manuscripts of all papers that have been accepted must be submitted in the formats listed below for final publication in the ACM Digital Library.
+</li>
+<li>
+For <strong>LaTeX authors</strong>, your source files will be used to auto-generate (1) a double-column PDF (<a target="_blank" rel="noopener noreferrer" href="/2026/assets/files/latex-two-column-submission-sample.pdf">example PDF <i class="fa fa-external-link" aria-hidden="true" style="padding-left: 5px;"></i></a>), and (2) an accessible and responsive webpage (<a target="_blank" rel="noopener noreferrer" href="https://dl.acm.org/doi/fullHtml/10.1145/3373625.3417006">example HTML <i class="fa fa-external-link" aria-hidden="true" style="padding-left: 5px;"></i></a>) that will be placed in the Digital Library.
+</li>
+<li>
+For <strong>Word authors</strong>, you will need to submit your paper in <strong>single-column format</strong> to correctly auto-generate (1) a double-column PDF (<a target="_blank" rel="noopener noreferrer" href="/2026/assets/files/word-two-column-submission-sample.pdf">example PDF <i class="fa fa-external-link" aria-hidden="true" style="padding-left: 5px;"></i></a>), and (2) an accessible and responsive webpage (<a target="_blank" rel="noopener noreferrer" href="https://dl.acm.org/doi/fullHtml/10.1145/3373625.3417006">example HTML <i class="fa fa-external-link" aria-hidden="true" style="padding-left: 5px;"></i></a>) in the Digital Library.
+</li>
+</ul>
+</div>
+
+<div class="flex-title">Presentation Format</div>
+<div class="flex-content">
+<ul>
+<li>
+Talk at the conference delivered by one or more authors of the paper
+</li>
+</ul>
+</div>
+
+<div class="flex-title">Video Preview</div>
+<div class="flex-content">
+<ul>
+<li>
+Video previews are mandatory.
+</li>
+<li>
+Recommended resolution: 1080p (1920 x 1080) or 4k (3840 x 2160 px), encoded as MP4 using the H.264 codec
+</li>
+<li>
+Length: 30 seconds
+</li>
+<li>
+Size: &lt; 150 MB
+</li>
+<li>
+Subtitles are required using a separate .srt or .sbv file
+</li>
+<!-- Jeremy: commenting because video/accessibility page is not approved yet -->
+<li>Please see the <a href="/2026/video-guide">video guide <i class="fa fa-external-link" aria-hidden="true" style="padding-left: 5px;"></i></a> for more information on producing a video preview.</li>
+<li>We strongly recommend that authors make their videos accessible through following the guidelines under <a href="/2026/accessibility">Making Video Figures Accessible <i class="fa fa-external-link" aria-hidden="true" style="padding-left: 5px;"></i></a>.</li>
+
+</ul>
+</div>
+
+<div class="flex-title">Demo Fast Track</div>
+<div class="flex-content">
+<ul>
+<li>
+Authors of accepted papers will be invited to participate in the UIST demo session. Details about this special/fast track of demos will be found on the <a href="#demos">demo </a>page. 
+</li>
+<li>
+Please note that a <strong>DOI will not be provided for invited demo papers.</strong> Authors interested in having a DOI for their demo paper should consider submitting to the regular demo track.
+</li>
+</ul>
+</div>
+</div>
+
+  <h3>Additional Notes</h3>
+
+  <!-- - **We strongly recommend submitting papers in the 2-column format**, but will accept papers for review as either 1- or 2-column paper format if you are authoring in Word. The rationale for strongly recommending a 2-column format is that reviewers have generally expressed a strong preference for printing and reading PDFs in a two-column format. Additionally, the PDFs that appear in the digital library are ultimately two-column. However, as we do use the TAPS workflow, we understand that Word users may want to utilize the single-column template. -->
+
+  <ul>
+    <li><strong>Accessibility:</strong> Accessible submissions are essential for reviewers and are good practice. To this end, we allow one week after the paper submission deadline to provide alt-text for all figures and tables and upload video subtitles to make your optional video accessible. Allowing additional time for your paper and video submissions to be accessible will help increase the quality of the conference overall and enable us to facilitate accessible reviewing. If the authors have difficulties with making their submission materials accessible, they are encouraged to contact the UIST 2026 Accessibility Chairs by emailing <a href="mailto:accessibility2026@uist.org">accessibility2026@uist.org</a> and volunteers with questions or for assistance to ensure that all accessible materials are submitted by the deadline. We strongly recommend that authors read the <a target="_blank" rel="noopener noreferrer" href="https://sigchi.org/conferences/author-resources/accessibility-guide/">SIGCHI Guidelines for an Accessible Submission <i class="fa fa-external-link" aria-hidden="true" style="padding-left: 5px;"></i></a> which describes the process to make a paper submission accessible, as well as the <a target="_blank" rel="noopener noreferrer" href="https://sigchi.org/resources/guides-for-authors/videos/">SIGCHI Technical Requirements and Guidelines for Videos <i class="fa fa-external-link" aria-hidden="true" style="padding-left: 5px;"></i></a>, which describes the process of accessible video creation and captioning.
+<!-- - **Diversity and Inclusion**. Accepted papers will be considered beyond their academic values but also for their role in enriching our community by fostering diversity and inclusiveness. The UIST’25 committee will select one or more papers for the  "Belonging & Inclusion Best Paper Award." More details will be available on this page after the submission deadline. --></li>
+    <li>The <b>author list</b> must be complete by the abstract submission deadline. Late author changes (i.e., additions or changes of order) require approval from program chairs and may be declined or might require paper withdrawal. Ensure all authors are listed in the correct order by the abstract deadline.</li>
+    <li>We will continue to put the papers up <strong>publicly</strong> on the ACM DL a week in advance of the conference.</li>
+    <li>Authors may submit a <strong>rebuttal</strong> after the reviews are released. Though the ACs may indicate if the rebuttal is likely to help the paper being accepted (based on reviews and internal discussions), any author may choose to respond. A rebuttal response by Associate Chairs and external reviewers will be enforced by the Program Chairs as much as possible.</li>
+    <li>The <strong>video</strong> has traditionally been due the same day as paper submissions and this has always been stressful. We will allow for 2 more grace days after the paper submission deadline for uploading your optional video.</li>
+    <li><strong>Open source</strong>: Our community welcomes open source and encourages the practice of creating software/hardware and sharing it through open-source and public repositories. However, open source is <strong>not</strong> a requirement or prerequisite for acceptance. Open source, as well as many other types of artifacts (e.g., videos, datasets, raw data, appendices), is recommended but completely optional, and will not be used for evaluation criteria. The paper should be evaluated on its own merits, not depending on supporting artifacts that are not submitted by the authors.</li>
+  </ul>
+
+  <h3>ACM’s Publication Policies</h3>
+  <p>By submitting your article to an ACM Publication, you are hereby acknowledging that you and your co-authors are subject to all <a href="https://www.acm.org/publications/policies"> ACM Publications Policies<i class="fa fa-external-link" aria-hidden="true" style="padding-left: 5px;"></i></a>, including ACM’s new Publications Policy on Research Involving Human Participants and Subjects. Alleged violations of this policy or any ACM Publications Policy will be investigated by ACM and may result in a full retraction of your paper, in addition to other potential penalties, as per ACM Publications Policy.</p>
+
+  <p>Please ensure that you and your co-authors obtain an ORCID ID, so you can complete the publishing process for your accepted paper. ACM has been involved in ORCID from the start and we have recently made a commitment to collect ORCID IDs from all of our published authors. The collection process has started and will roll out as a requirement throughout 2022. We are committed to improve author discoverability, ensure proper attribution and contribute to ongoing community efforts around name normalization; your ORCID ID will help in these efforts.</p>
+
+  <p><br /></p>
+
+  <h3 id="program" class="chair-header mt-8">
+  <!-- <a class="anchor-link" href="#program"> -->
+  
+  Program Chairs
+  
+  <!-- </a> -->
+</h3>
+
+  <p class="chair-email fs-2 fw-light"><a href="mailto:program2026@uist.org">program2026@uist.org</a></p>
+
+  <ul class="row chair_row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-4 list-unstyled">
+  
+  
+
+  <li class="col committee-member d-flex">
+    <a class="organizer_link w-100 d-flex" href="https://amypavel.com" target="_blank">
+      <div class="card text-center organizer_card w-100 h-100 d-flex flex-column">
+        <div class="ratio ratio-1x1">
+          <img alt="profile of Amy Pavel" src="/2026/assets/profiles/amy_pavel.jpg" onerror="if (this.src != '/2026/assets/profiles/nopic.jpg') this.src = '/2026/assets/profiles/nopic.jpg';" class="headshot card-img-top object-fit-cover" />
+        </div>
+        <div class="card-body px-1 py-1 d-flex flex-column justify-content-center align-items-center flex-grow-1">
+          <div class="organizer_name">Amy Pavel</div>
+          <div class="organizer_affiliation">UC Berkeley, USA</div>
+        </div>
+
+      </div>
+      
+    </a>
+  </li>
+  
+  
+
+  <li class="col committee-member d-flex">
+    <a class="organizer_link w-100 d-flex" href="https://guoanhong.com" target="_blank">
+      <div class="card text-center organizer_card w-100 h-100 d-flex flex-column">
+        <div class="ratio ratio-1x1">
+          <img alt="profile of Anhong Guo" src="/2026/assets/profiles/anhong_guo.jpg" onerror="if (this.src != '/2026/assets/profiles/nopic.jpg') this.src = '/2026/assets/profiles/nopic.jpg';" class="headshot card-img-top object-fit-cover" />
+        </div>
+        <div class="card-body px-1 py-1 d-flex flex-column justify-content-center align-items-center flex-grow-1">
+          <div class="organizer_name">Anhong Guo</div>
+          <div class="organizer_affiliation">Univ. of Michigan, USA</div>
+        </div>
+
+      </div>
+      
+    </a>
+  </li>
+  
+  
+
+  <li class="col committee-member d-flex">
+    <a class="organizer_link w-100 d-flex" href="https://cs.au.dk/~clemens/" target="_blank">
+      <div class="card text-center organizer_card w-100 h-100 d-flex flex-column">
+        <div class="ratio ratio-1x1">
+          <img alt="profile of Clemens Klokmose" src="/2026/assets/profiles/clemens_klokmose.jpg" onerror="if (this.src != '/2026/assets/profiles/nopic.jpg') this.src = '/2026/assets/profiles/nopic.jpg';" class="headshot card-img-top object-fit-cover" />
+        </div>
+        <div class="card-body px-1 py-1 d-flex flex-column justify-content-center align-items-center flex-grow-1">
+          <div class="organizer_name">Clemens Klokmose</div>
+          <div class="organizer_affiliation">Aarhus Univ., Denmark</div>
+        </div>
+
+      </div>
+      
+    </a>
+  </li>
+  
+  
+
+  <li class="col committee-member d-flex">
+    <a class="organizer_link w-100 d-flex" href="https://jyskwon.github.io" target="_blank">
+      <div class="card text-center organizer_card w-100 h-100 d-flex flex-column">
+        <div class="ratio ratio-1x1">
+          <img alt="profile of Jean Song" src="/2026/assets/profiles/jean_song.jpg" onerror="if (this.src != '/2026/assets/profiles/nopic.jpg') this.src = '/2026/assets/profiles/nopic.jpg';" class="headshot card-img-top object-fit-cover" />
+        </div>
+        <div class="card-body px-1 py-1 d-flex flex-column justify-content-center align-items-center flex-grow-1">
+          <div class="organizer_name">Jean Song</div>
+          <div class="organizer_affiliation">Yonsei Univ., Korea</div>
+        </div>
+
+      </div>
+      
+    </a>
+  </li>
+  
+  
+
+  <li class="col committee-member d-flex">
+    <a class="organizer_link w-100 d-flex" href="https://juhokim.com" target="_blank">
+      <div class="card text-center organizer_card w-100 h-100 d-flex flex-column">
+        <div class="ratio ratio-1x1">
+          <img alt="profile of Juho Kim" src="/2026/assets/profiles/juho_kim.jpg" onerror="if (this.src != '/2026/assets/profiles/nopic.jpg') this.src = '/2026/assets/profiles/nopic.jpg';" class="headshot card-img-top object-fit-cover" />
+        </div>
+        <div class="card-body px-1 py-1 d-flex flex-column justify-content-center align-items-center flex-grow-1">
+          <div class="organizer_name">Juho Kim</div>
+          <div class="organizer_affiliation">KAIST, Korea</div>
+        </div>
+
+      </div>
+      
+    </a>
+  </li>
+  
+  
+
+  <li class="col committee-member d-flex">
+    <a class="organizer_link w-100 d-flex" href="https://valkyriesavage.com" target="_blank">
+      <div class="card text-center organizer_card w-100 h-100 d-flex flex-column">
+        <div class="ratio ratio-1x1">
+          <img alt="profile of Valkyrie Savage" src="/2026/assets/profiles/valkyrie_savage.jpg" onerror="if (this.src != '/2026/assets/profiles/nopic.jpg') this.src = '/2026/assets/profiles/nopic.jpg';" class="headshot card-img-top object-fit-cover" />
+        </div>
+        <div class="card-body px-1 py-1 d-flex flex-column justify-content-center align-items-center flex-grow-1">
+          <div class="organizer_name">Valkyrie Savage</div>
+          <div class="organizer_affiliation">Univ. of Copenhagen, Denmark</div>
+        </div>
+
+      </div>
+      
+    </a>
+  </li>
+  
+</ul>
+
+  <p><br id="poster" /></p>
+
+  <hr />
+
+  <p><!-- POSTER -->
+ <!-- POSTER -->
+ <!-- POSTER -->
+ <!-- POSTER -->
+ <!-- POSTER -->
+ <!-- POSTER -->
+ <!-- POSTER -->
+ <!-- POSTER -->
+ <!-- POSTER --></p>
+
+  <h2 id="posters">Posters</h2>
+
+  <p>Posters provide an interactive forum in which authors can present their work to conference attendees during special poster sessions. Posters are an opportunity to describe new work, work that is still in progress, and work that is already presented in other venues but to share more with the UIST community.</p>
+
+  <p>Posters are semi-archival and will be more lightly reviewed than papers. For questions, please email the poster chairs at <a href="mailto:posters2025@uist.org"><strong>posters2026@uist.org</strong></a>.</p>
+
+  <table class="dates">
+<tbody>
+    <tr>
+    <th>Submission deadline</th>
+    <td>Friday, July 10, 2026</td>
+    </tr>
+    <tr>
+    <th>Acceptance notification</th>
+    <td>Friday, August 14, 2026</td>
+    </tr>
+    <tr>
+    <th>Camera-ready versions due</th>
+    <td>Friday, August 21, 2026</td>
+    </tr>
+    <tr>
+    <th>Accompanying video (optional)</th>
+    <td>Friday, August 21, 2026</td>
+    </tr>
+</tbody>
+</table>
+
+  <p><br /></p>
+  <h3>Submission Information</h3>
+
+  <div class="flex-container">
+
+<div class="flex-title">Submission Platform</div>
+<div class="flex-content">
+<ul>
+<li>All materials must be submitted electronically to <a href="http://new.precisionconference.com/~sigchi" target="_blank">PCS 2.0 <i class="fa fa-external-link" aria-hidden="true" style="padding-left: 5px;"></i></a> before the submission deadline.</li>
+<li>In PCS 2.0, first click "Submissions" at the top of the page, from the dropdown menus for society, conference, and track select "SIGCHI," "UIST 2026," and "UIST 2026 Posters," respectively, and press "Go."</li>
+</ul>
+</div>
+
+<div class="flex-title">Submission Format and Length</div>
+<div class="flex-content">
+<ul>
+<li><b>Poster's Extended Abstract</b></li>
+<ul>
+<li>The extended abstract should not exceed <b>2 pages</b> (excluding references).</li>
+<li><a href="https://www.acm.org/publications/taps/word-template-workflow" target="_blank"><b>We will adopt the ACM TAPS Workflow</b> <i class="fa fa-external-link" aria-hidden="true" style="padding-left: 5px;"></i></a>.</li>
+<li>For <b>LaTeX authors</b>, submissions should be in the <b>double-column format</b> (<a target="_blank" rel="noopener noreferrer" href="/2026/assets/files/latex-two-column-submission-sample.pdf">example PDF <i class="fa fa-external-link" aria-hidden="true" style="padding-left: 5px;"></i></a>) using <code>\documentclass[sigconf,review,anonymous]{acmart}</code>. (please use the <a href="https://portalparts.acm.org/hippo/latex_templates/acmart-primary.zip" target="_blank" rel="noopener noreferrer">downloadable LaTex template <i class="fa fa-external-link" aria-hidden="true" style="padding-left: 5px;"></i></a> or the <a href="https://www.overleaf.com/latex/templates/acm-conference-proceedings-master-template/pnrfvrrdbfwt" target="_blank" rel="noopener noreferrer">Overleaf template <i class="fa fa-external-link" aria-hidden="true" style="padding-left: 5px;"></i></a>).</li>
+<li>For <b>Word authors</b>, submissions should be in the double-column format (<a target="_blank" rel="noopener noreferrer" href="/2026/assets/files/word-two-column-submission-sample.docx">submission template <i class="fa fa-external-link" aria-hidden="true" style="padding-left: 5px;"></i></a>, <a target="_blank" rel="noopener noreferrer" href="/2026/assets/files/word-two-column-submission-sample.pdf">example PDF <i class="fa fa-external-link" aria-hidden="true" style="padding-left: 5px;"></i></a>).</li>
+<li>Size: &lt; <b>20 MB</b> (compressed PDF files are encouraged during submission)</li>
+</ul>
+<br />
+<li><b>Accompanying Poster</b></li>
+<ul>
+<li>Recommended physical size is equal to or less than 841 mm x 1189 mm (A0 size) in either portrait or landscape.</li>
+</ul>
+</ul>
+</div>
+
+<div class="flex-title">Accompanying Video</div>
+<div class="flex-content">
+<ul>
+<li>Optional, but highly encouraged</li>
+<li>Resolution of 1080p (1920 x 1080) or 4k (3840 x 2160 px), encoded as MP4 using the H.264 codec</li>
+<li>No more than 5 minutes long</li>
+<li>Size: &lt; 250 MB</li>
+<li>Subtitles are required using a separate .srt or .sbv file</li>
+</ul>
+</div>
+
+<div class="flex-title">Maximum File Size</div>
+<div class="flex-content">
+<ul>
+<li>Maximum total size for all files &lt; 300 MB</li>
+</ul>
+</div>
+
+<div class="flex-title">Anonymity</div>
+<div class="flex-content">
+<ul>
+<li><b>IMPORTANT: Anonymous,</b> i.e. authors must remove their names and affiliations throughout all submission materials (paper, videos, supplementary material) (<a href="/2026/author-guide/#anonymity">anonymity policy <i class="fa fa-external-link" aria-hidden="true" style="padding-left: 5px;"></i></a>)</li>
+<li>Discuss your own prior work in 3rd person and include a full reference with names.</li>
+</ul>
+</div>
+
+<div class="flex-title">Selection Process</div>
+<div class="flex-content">
+<ul>
+<li><a href="https://www.acm.org/publications/policies/pre-publication-evaluation" target="_blank" rel="noopener noreferrer">Reviewed <i class="fa fa-external-link" aria-hidden="true" style="padding-left: 5px;"></i></a></li>
+<li>Less rigorous than a paper review and does not include an author's rebuttal. Authors may expect to receive only light feedback.</li>
+<li>The submitted content is generally not required to make the same level of lasting and significant contribution as refereed content.</li>
+</ul>
+</div>
+
+<div class="flex-title">Publication</div>
+<div class="flex-content">
+<ul>
+<li>Semi-archival, i.e., authors may re-use and re-submit the content to other peer-reviewed venues (e.g., could be reused in a future UIST full paper submission).</li>
+<li>The 2-page extended abstracts will be included in the ACM Digital Library as adjunct proceedings and distributed digitally to conference attendees. The poster design will not be included in the ACM Digital Library.</li>
+</ul>
+</div>
+
+<div class="flex-title">Presentation Format</div>
+<div class="flex-content">
+<ul>
+<li>At least one author is requested to register and stand by their poster during the poster session to speak with conference attendees.</li>
+</ul>
+</div>
+
+<div class="flex-title">Concurrent UIST Demo Submission</div>
+<div class="flex-content">
+<ul>
+<li>The same work cannot be submitted to both the UIST Demo and Posters tracks. Double submissions will only be considered as demo submissions and will be rejected from the Posters track.</li>
+</ul>
+</div>
+
+<div class="flex-title">Novelty of Work</div>
+<div class="flex-content">
+<ul>
+<li>Resubmission of posters previously shown at other venues is allowed.</li>
+<li>Please state previous poster venues and differences from previous posters in the appropriate box in PCS.</li>
+</ul>
+</div>
+
+</div>
+
+  <h3>Additional Notes</h3>
+
+  <ul>
+    <li>The <strong>author list</strong> must be complete by the submission deadline. Late author changes (i.e., additions or changes of order) require approval from program chairs and may be declined or might require paper withdrawal. Ensure all authors are listed in the correct order by the submission deadline.</li>
+  </ul>
+
+  <p><br /></p>
+
+  <h3 id="posters" class="chair-header mt-8">
+  <!-- <a class="anchor-link" href="#posters"> -->
+  
+  Posters Chairs
+  
+  <!-- </a> -->
+</h3>
+
+  <p class="chair-email fs-2 fw-light"><a href="mailto:posters2026@uist.org">posters2026@uist.org</a></p>
+
+  <ul class="row chair_row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-4 list-unstyled">
+  
+  
+
+  <li class="col committee-member d-flex">
+    <a class="organizer_link w-100 d-flex" href="https://www.muhammad-abdullah.com/" target="_blank">
+      <div class="card text-center organizer_card w-100 h-100 d-flex flex-column">
+        <div class="ratio ratio-1x1">
+          <img alt="profile of Muhammad Abdullah" src="/2026/assets/profiles/muhammad_abdullah.jpg" onerror="if (this.src != '/2026/assets/profiles/nopic.jpg') this.src = '/2026/assets/profiles/nopic.jpg';" class="headshot card-img-top object-fit-cover" />
+        </div>
+        <div class="card-body px-1 py-1 d-flex flex-column justify-content-center align-items-center flex-grow-1">
+          <div class="organizer_name">Muhammad Abdullah</div>
+          <div class="organizer_affiliation">Hasso Plattner Institute, Germany</div>
+        </div>
+
+      </div>
+      
+    </a>
+  </li>
+  
+  
+
+  <li class="col committee-member d-flex">
+    <a class="organizer_link w-100 d-flex" href="https://hyunsungcho.com" target="_blank">
+      <div class="card text-center organizer_card w-100 h-100 d-flex flex-column">
+        <div class="ratio ratio-1x1">
+          <img alt="profile of Hyunsung Cho" src="/2026/assets/profiles/hyunsung_cho.jpg" onerror="if (this.src != '/2026/assets/profiles/nopic.jpg') this.src = '/2026/assets/profiles/nopic.jpg';" class="headshot card-img-top object-fit-cover" />
+        </div>
+        <div class="card-body px-1 py-1 d-flex flex-column justify-content-center align-items-center flex-grow-1">
+          <div class="organizer_name">Hyunsung Cho</div>
+          <div class="organizer_affiliation">CMU, USA</div>
+        </div>
+
+      </div>
+      
+    </a>
+  </li>
+  
+</ul>
+
+  <p><br id="demos" /></p>
+  <hr />
+
+  <p><!-- DEMOS -->
+ <!-- DEMOS -->
+ <!-- DEMOS -->
+ <!-- DEMOS -->
+ <!-- DEMOS --></p>
+</div>
+
+
+  <footer class="site-footer my-5"><span class="text-end">&copy; 2026 ACM SIGCHI.</span> Logo/iconography designed by <a
+                href="https://www.shuhong-hci.com">Shuhong Wang</a>. Detroit photography from <a
+                href="https://visitdetroit.com/">Visit Detroit</a>.</footer>
+</main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

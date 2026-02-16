@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  
+  <title>UIST 2026 - Video Guide</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Cache-control" content="public" />
+  <meta http-equiv="content-type" content="text/html" />
+  <link rel="icon" href="/2026/favicon.ico?v=3" type="image/x-icon" />
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous" defer></script> -->
+  <link rel="stylesheet" href="/2026/assets/style.css?v=2" />
+  <script src="/2026/assets/js/color-modes.js"></script>
+</head>
+
+<body>
+
+  <a class="sr-only sr-only-focusable" href="#main-content">Skip to main content</a>
+
+<!-- DEBUG: page.url = '/video-guide/' -->
+<nav class="navbar fixed-top navbar-expand-lg" id="myTopnav">
+    <div class="container ">
+        <a class="navbar-brand nav-link " href="/2026/"><img
+                src="/2026/assets/images/uist_26_logo.png" id="navbar-logo"
+                data-light-src="/2026/assets/images/uist_26_logo_light_bg.png"
+                data-dark-src="/2026/assets/images/uist_26_logo.png" alt="UIST 2026 Home"
+                style="height: 45px" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav nav nav-underline ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link " href="/2026/cfp">Full CFP</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="/2026/sponsors">For
+                        Sponsors</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link "
+                        href="/2026/organizers">Organizers</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        More Info
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="/2026/archive/">UIST Archive</a></li>
+                        <li><a class="dropdown-item" href="/2025/">Previous Year (UIST 2025)</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <button class="nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center" id="bd-theme"
+                        type="button" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static"
+                        aria-label="Toggle theme (auto)">
+                        <i class="fas fa-circle-half-stroke my-1 theme-icon-active"></i>
+                        <span class="d-lg-none ms-2" id="bd-theme-text">Toggle theme</span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
+                        <li class="dropdown-item" data-bs-theme-value="light" aria-pressed="false">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-sun me-2 opacity-50 theme-icon" data-theme-icon="fa-sun"></i>
+                                Light
+                                <i class="fas fa-check ms-auto d-none"></i>
+                            </div>
+                        </li>
+                        <li class="dropdown-item" data-bs-theme-value="dark" aria-pressed="false">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-moon me-2 opacity-50 theme-icon" data-theme-icon="fa-moon"></i>
+                                Dark
+                                <i class="fas fa-check ms-auto d-none"></i>
+                            </div>
+                        </li>
+                        <li class="dropdown-item" data-bs-theme-value="auto" aria-pressed="true">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-circle-half-stroke me-2 opacity-50 theme-icon"
+                                    data-theme-icon="fa-circle-half-stroke"></i>
+                                Auto
+                                <i class="fas fa-check ms-auto d-none"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<!-- <div class="logo-area" style="height: 200px;">
+  <div class="logo-bg"></div>
+</div> -->
+<div class="logo-area" style="height: 0px;">
+  <div class="logo-bg"></div>
+</div>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.min.js" defer></script>
+<script src="/2026/assets/js/subCanvas.js" defer></script> -->
+
+
+
+<main id="main-content" class="container ">
+  <span id="cursor"></span>
+<script type="text/javascript" src="/2026/assets/js/scroll-progress.min.js" defer></script>
+<script type="text/javascript" src="/2026/assets/js/initScroll.js?v=2" defer></script>
+
+<style>
+#markdown-toc { width: 180px; }
+</style>
+
+
+<h2 class="title" id="video-guide">Video Guide</h2>
+
+<ul id="markdown-toc">
+  <li><a href="#video-guide" id="markdown-toc-video-guide">Video Guide</a></li>
+  <li><a href="#videos-at-uist" id="markdown-toc-videos-at-uist">Videos at UIST</a></li>
+  <li><a href="#video-previews" id="markdown-toc-video-previews">Video Previews</a>    <ul>
+      <li><a href="#examples" id="markdown-toc-examples">Examples</a></li>
+    </ul>
+  </li>
+  <li><a href="#video-figures" id="markdown-toc-video-figures">Video Figures</a></li>
+  <li><a href="#requirements" id="markdown-toc-requirements">Requirements</a>    <ul>
+      <li><a href="#opening-title" id="markdown-toc-opening-title">Opening Title</a></li>
+      <li><a href="#subtitles" id="markdown-toc-subtitles">Subtitles</a></li>
+      <li><a href="#metadata" id="markdown-toc-metadata">Metadata</a></li>
+    </ul>
+  </li>
+  <li><a href="#copyright-policy" id="markdown-toc-copyright-policy">Copyright Policy</a></li>
+  <li><a href="#creation-advice" id="markdown-toc-creation-advice">Creation Advice</a></li>
+  <li><a href="#questions" id="markdown-toc-questions">Questions?</a></li>
+</ul>
+
+<h2 id="videos-at-uist">Videos at UIST</h2>
+
+<p>Video is a great way for showing reviewers and the conference audience the look and feel of your application. Much of the work at UIST involves highly interactive applications and examples that are difficult to capture using words and static images. To misquote the cliche if a picture is worth a thousand words, then a good video can be worth many more still.</p>
+
+<p>There are two types of videos:</p>
+
+<ul>
+  <li>30-second video previews for showcasing your paper before, during and after the conference on Youtube and the ACM DL. See the <a href="#video-previews">video previews</a> section below for more information.</li>
+  <li>Supporting video figures that are reviewed with your submission (see CFP for details on length and format)</li>
+</ul>
+
+<p>Although papers must stand on their own, submitted videos will be sent to reviewers as supporting material.</p>
+
+<h2 id="video-previews">Video Previews</h2>
+
+<p>A 30-second video preview is a video abstract of a paper or other publication, an “elevator pitch” that communicates the contributions of the work in a visual, concise way. 30-second video previews provide authors with a great opportunity to promote their work to a wider audience and to attract more readers to their publications. Video previews reach not only conference attendees but also other researchers and practitioners within and outside the community, as well as journalists before, during, and after the conference.</p>
+
+<p><strong>All authors of Papers and Demos must submit a video preview!</strong></p>
+
+<p><strong>Video previews are optional but highly encouraged for Poster authors.</strong></p>
+
+<p>All 30-second video previews will be available approximately two weeks before, during, and after the conference on different platforms. We will publish your video previews on:</p>
+
+<ul>
+  <li><a href="https://www.youtube.com/user/acmsigchi">ACM SIGCHI’s Youtube Channel</a> (see <a href="https://www.youtube.com/playlist?list=PLqhXYFYmZ-VdaPIMTFVH5K5brMDJClfAn">UIST 2022 video previews</a>)</li>
+  <li>On the <a href="https://dl.acm.org/">ACM Digital Library</a>, next to the abstracts of their publications</li>
+  <li>Selected video previews will also be featured in the conference teaser video (see <a href="https://www.youtube.com/watch?v=vFYoAghICeI">UIST 2022’s teaser video</a>)</li>
+  <li>Video previews will also be included / linked to from the conference program application and / or web app</li>
+  <li>the digital proceedings</li>
+</ul>
+
+<h3 id="examples">Examples</h3>
+
+<p><strong>Your Contribution Up Front</strong></p>
+
+<p>Make sure your video highlights your contribution/s. You can show your contribution right at the beginning, at the same time than your title shot:</p>
+
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=mGJe0AdszJg">https://www.youtube.com/watch?v=mGJe0AdszJg</a></li>
+  <li><a href="https://www.youtube.com/watch?v=8Ik7V_QH5wk">https://www.youtube.com/watch?v=8Ik7V_QH5wk</a></li>
+  <li><a href="https://www.youtube.com/watch?v=tUsqne5GWgk">https://www.youtube.com/watch?v=tUsqne5GWgk</a></li>
+</ul>
+
+<p><strong>Structure</strong></p>
+
+<p>A good structure can help you make the most of your 30 seconds. In this example, authors start with the problem, show their solution, and end with their evaluation.</p>
+
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=Rj_0GFeUQjg">https://www.youtube.com/watch?v=Rj_0GFeUQjg</a></li>
+</ul>
+
+<p><strong>Uses cases</strong></p>
+
+<p>You may want to showcase many examples of what your system can do.</p>
+
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=Rj_0GFeUQjg">https://www.youtube.com/watch?v=Rj_0GFeUQjg</a></li>
+</ul>
+
+<p><strong>Self-explanatory videos (no voice over)</strong></p>
+
+<p>If you don’t want to do a voice over, you don’t have to! Videos can be self explanatory if they include great illustrations of your system:</p>
+
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=IhIOLLE0ugg">https://www.youtube.com/watch?v=IhIOLLE0ugg</a></li>
+  <li><a href="https://www.youtube.com/watch?v=b1vrvDUr1Ds">https://www.youtube.com/watch?v=b1vrvDUr1Ds</a></li>
+</ul>
+
+<p>You can also add short text annotations to explain your video. You can place text annotations at the bottom, or next to the object they are describing. Also, think of visibility and contrast, to make your text annotations more readable.</p>
+
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=8Ik7V_QH5wk">https://www.youtube.com/watch?v=8Ik7V_QH5wk</a></li>
+  <li><a href="https://www.youtube.com/watch?v=uHXqqO5Jj0A">https://www.youtube.com/watch?v=uHXqqO5Jj0A</a></li>
+  <li><a href="https://www.youtube.com/watch?v=Ler01uKHhcs">https://www.youtube.com/watch?v=Ler01uKHhcs</a></li>
+</ul>
+
+<h2 id="video-figures">Video Figures</h2>
+
+<p>Video Figures are supplementary material of your submission and illustrate the key aspects of the work you submitted.</p>
+
+<h2 id="requirements">Requirements</h2>
+
+<p><a href="#footnote2">See also: [Footnote 2]</a></p>
+
+<h3> Encoding to MPEG-4/H.264 (.mp4) </h3>
+
+<p>Video files <strong>must</strong> use the MPEG-4 format (.mp4) with the H.264 codec. Most video editing software supports an export in this format and codec. Alternatively, online services as well as standalone software exists that enables transcoding of video files:</p>
+
+<ul>
+  <li><a href="https://handbrake.fr/">Handbrake</a> provides good compression results and is available for OSX, Windows, and Linux</li>
+  <li><a href="https://www.FFmpeg.org/">FFmpeg</a> is a well-known transcoding solution for Linux, WIndows, and OSX</li>
+  <li><a href="https://www.freemake.com/">Freemake</a> for Windows</li>
+</ul>
+
+<p>Encode your video using “square pixels” for the pixel aspect ratio to avoid your movie looking stretched when watched.</p>
+
+<h3 id="opening-title">Opening Title</h3>
+
+<p>The first 3-5 seconds of your video must include an opening title slide, showing: title of your paper, author(s), affiliation(s), and contact information. <strong>Note:</strong> For anonymised venues, please remove all identifying information (e.g. names &amp; affiliations on your title slide; meta information in the video file) for your initial submission.</p>
+
+<h3 id="subtitles">Subtitles</h3>
+
+<p>For ALL videos closed captions (CC) / subtitles of spoken text are mandatory. Subtitles should not be embedded or burned into the video file. Please submit them here as a separate file in a valid captions format (.srt or .sbv).</p>
+
+<p><strong>Creating Captions File</strong></p>
+
+<p>To create the needed SubRip Subtitle (SRT) file, there are several free, easy ways to caption your videos. The SRT file is basically a text file containing a numeric counter or sequence number to identify the caption order, time codes when the caption should appear and respectively disappear, and the caption texts.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>\[numeric counter\]  1
+\[time codes\]       00:00:04,000 --&gt; 00:00:08,868
+\[Subtitle text\]    Caption text that appears in the above mentioned time code. 
+</code></pre></div></div>
+
+<p>The following example shows three captions with the numeric counter, the time codes when the captions appear and the time codes when they disappears, and finally the caption texts.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1
+00:00:04,000 --&gt; 00:00:08,868
+This is a closed captioning (CC) making your
+video a great UIST video, which is...
+
+2
+00:00:09,500 --&gt; 00:00:10,730
+accessible...
+
+3
+00:00:10,000 --&gt; 00:00:14,216
+to EVERYONE. Enjoy!
+</code></pre></div></div>
+
+<p>You can also upload the video to YouTube to create and edit captions. You can keep the video private or unlisted and delete it immediately after. You have the choice to manually create all captions, or let YouTube automatically generate captions and manually correct them. Check out this tutorial on how to produce your captions file with Youtube: <a href="https://www.youtube.com/watch?v=LcHIZ9aI9TA">step-by-step captioning tutorial</a>, and then download your captions as a .SRT file.</p>
+
+<h3 id="metadata">Metadata</h3>
+
+<p>Please review the meta-properties of your video file.</p>
+
+<p>For anonymised venues, please remove all identifying information (e.g. names &amp; affiliations on your title slide; meta information in the video file) for your initial submission. For non-anonymised venues and final / camera-ready submissions, please review the meta properties of your video file and ensure that title, author, and copyright information are set correctly.</p>
+
+<h2 id="copyright-policy">Copyright Policy</h2>
+
+<p>It is your responsibility to ensure that you have the rights to use all the material that is contained in your submission, including music, video, images, etc. Obtaining permissions to use video, audio, or pictures of identifiable people, or proprietary content rests with the author, not the ACM or the UIST conference. You are encouraged to use Creative Commons content, for example music available at <a href="http://ccmixter.org/">ccMixter</a> or <a href="http://www.newgrounds.com/audio/">Newgrounds</a>, but please ensure that the license allows your intended use. If you need to use copyrighted protected work, you are required to review and comply to <a href="http://www.acm.org/publications/policies/copyright_policy/">ACM’s Copyright and Permission Policy</a> and <a href="http://www.acm.org/publications/authors/third-party-material">ACM’s Requirements about 3rd party material</a>. In addition, <a href="https://support.google.com/youtube/answer/2797466">YouTube’s copyright education website</a> provides useful information on reusing 3rd party material.</p>
+
+<p><strong>Note: You will be asked to confirm that you agree with these policies on the final submission form.</strong></p>
+
+<h2 id="creation-advice">Creation Advice</h2>
+
+<p>These hints serve as a guide describing how to produce an ideal video for UIST. Please do not be intimidated by the guide. Videos are viewed only as supporting material, and authors of accepted papers will have the opportunity to prepare a more elaborate version for inclusion in the video proceedings if the paper is accepted.</p>
+
+<h3> Proofread Your Video </h3>
+
+<p>Anyone who has done video editing and post-production knows that it is a surprisingly time consuming business. However, it’s garbage-in garbage-out, and if you don’t have good content or message, the best video editing in the world will not help it that much. So, make sure that you thoroughly “proofread” your video. The time will be well spent, and it will probably still only require a fraction of the time that you have to spend anyway on video production.</p>
+
+<p>So, how does one determine if the content is good and the message clear? We suggest you “proof read” or usability test your video. You can start off by testing your script with colleagues and friends. Is it interesting and understandable? Next you may want to storyboard your video. Do the cuts and transitions make sense to people, can they visualize how it will look? As well as being useful for usability testing, the storyboard should be an important part of your planning process. Next you should do rough cuts of the video. Do people want to see more talking head shots or less? Is the demo clear? Is the pace too fast or too slow? Are there any particular usability problems with specific segments of the video? We hope that the hints we provide to you help you make an interesting and understandable video.</p>
+
+<h3> Planning Before You Shoot</h3>
+
+<p>Before shooting begins, prepare a detailed script of the video and rehearse it thoroughly. Your rehearsal should include shooting the scenes as they are walked through and then reviewing what you have shot. When you perform your review consider looking at the image on a TV monitor or computer screen rather than the viewfinder of your camera. Reviewing what you have captured will tell you a lot about the changes you can make so your video images are clear to the viewing audience. Questions you may want to ask yourself while you watch your video are: are there distracting background noises that can be eliminated such as turning off the coffee machine or shooting when the heating system is not running? Are all the things you want in view in view? Can the lighting be changed to better show the items of interest?</p>
+
+<p>Videos require much more planning and preparation than most people think. Find someone who doesn’t understand what you do, sit them down and give your demo to them before you start filming. It’s good practice in speaking and helps to clarify the delivery of your ideas. If your demo involves a larger group of people, it will be especially important to have the major scripting and production bugs worked out beforehand.</p>
+
+<p>It is generally not needed to hire professional actors to appear in your video. (However, professional readers may be appropriate for the audio, see below.) Usually the most realistic and convincing advocate of an idea is the person responsible for the research. However, make sure people who appear on camera speak naturally, and don’t look like they are reading. Remember that the value of video is as a way of demonstrating things, so keep talking heads to a minimum unless they are an intrinsic part of the event or process being described.</p>
+
+<h3> Pacing (Really Important!) </h3>
+
+<p>The video medium is different from either a lecture or demonstration. The pacing of a video presentation must be appropriate for concentrated presentation through a TV or computer screen. Too slow a pace is as common as too fast. A recording of a live demo often will appear too slow. Storyboard your script to compose a sequence of scenes that tell your story. Check that transitions between each scene give the viewer a sense of continuity and that the transition style does not distract the viewer from the video content.</p>
+
+<h3> Content: Exposition and Presentation </h3>
+
+<p>The exposition style of your video presentation will greatly affect its impact. Use the multiple modes of communication that are available simultaneously in video. Always explain (briefly perhaps) what is about to happen or what is most interesting. Display screens have few natural navigation aids. Tell the viewer where to look and what to look for. You might speak aloud the directions to the camera operator, such as “if you zoom in on the top right corner of the display” which will help the viewer orient themselves. Make your point once, and make it effectively; avoid being repetitious.</p>
+
+<p>Seek a variety of images: switch between face, screen, hands, and slides to keep the viewer’s interest. Always start out with an establishing shot, which shows the context of the subject and/or group. This might be a wide shot of the group in a meeting room, a split-screen shot of users in different locations, a wide shot of a meeting participant at the computer, or of the entire computer screen. This helps the viewer stay oriented. Periodically return to an establishing shot to keep the viewer from getting confused.</p>
+
+<p>Each shot should be visually well composed. Get as close to the subject as you can. As a rule of thumb, place your subject so that it takes up two thirds of the screen. Avoid having the subject in the exact middle of the screen. Pay attention to the background and colors; the eye is drawn to the most brightly colored part of the scene. Make the lightest and brightest part be the point of interest.</p>
+
+<p>Avoid visual distractions, such as idly moving the mouse. Fades to black can be used as transitions between scenes, but they should not be overused. A full screen fade usually indicates a change in subject, time or place, and can be confusing when used elsewhere. Visual distractions can be caused by patterns such as plaid and strip shirts. Encourage speakers to where solid colored clothes to avoid the perception of shimmer in the video image.</p>
+
+<h3> Equipment </h3>
+
+<p>Use the best quality equipment that is available to you. Remember video resolution must be 1080p (1920 x 1080 px) or 4k (3840 x 2160) with a 16:9 aspect ratio. The final production quality of a video depends both on the quality of the equipment as well as the training and experience of the video maker. If you have access to a high-quality production studio and trained personnel, use them. However, production quality can be achieved with the commercial equipment found in most universities, companies, and—if need be—even high quality mobile phones.</p>
+
+<h3>Camera Basics</h3>
+
+<p>Too much movement is a common problem with many videos and is a problem that can easily be avoided by adopting some simple camera techniques. Using a tripod can give a stable image by removing the potential for “camera jiggles” and can also ensure that the image seen appears level. Minimizing the use of panning, zooming, and other moving shots can also help. Use the pan and zoom capability to get your subject in the appropriate view prior to the shoot. When you do use pan or zoom, begin and end each moving shot with a static shot.</p>
+
+<h3>Lighting</h3>
+
+<p>Carefully consider lighting when preparing the area for the shoot. Avoid using several different sources of lights when shooting. It can throw off your colors and has the potential to have the subject of interest appear to dark or too bright during the course of the shoot. When reviewing your video look for distracting dramatic shadows on walls, poor contrast between the subject and the background, or ghoulish shadows on faces, a common occurrence with overhead lighting. Using directed diffuse lighting could help solve some of these problems caused by poor lighting conditions. When recording information from a screen (e.g. computer, tablet, or mobile phone) check for glare and adjust your lighting to remove or reduce the glare as much as you can.</p>
+
+<p>Many cameras enable you to do white balance adjustments. Make use of this feature as it can greatly enhance the contrast between your subject and the background.</p>
+
+<p>Avoid using different sources of lights when shooting, as it will throw off your colors. For example, avoid taping in a room with both natural and artificial light sources. The white balance setting adjusts the camera to your lighting. When setting, focus the camera on the color that you want to be filmed as white. This could be a sheet of white paper or the whitest color in the scene, depending on the effect you want. Avoid having too much white in a scene because it will make all your other colors too dark.</p>
+
+<h3>Sound/Audio</h3>
+
+<p>The quality of the sound can greatly impact the quality of your video. As with light there are simple techniques that you can employ to add to the quality of your video. Often the camera microphone does not give adequate sound. To overcome this problem, the sound can be recorded separately, as is usually done for voice overs. For in-scene audio, consider using an off-camera microphone that is directly fed into the video camera used in the shoot. It can give you the quality sound you need and remove the need for you to add a voice over and synchronize the voice with the images. Removing unwanted background noise is helpful. Sudden and repetitive sounds often can be avoided by asking those in the room of the shoot to not rustle paper, clear their throat or jingle the change in their pockets. Doing the shoot between on cycles of the room? Heating/cooling systems are another possibility and shutting windows to eliminate street noise. When doing a commentary near a computer using talking heads, try to do these with the computer off, or with the microphones arranged so that the computer noise is not picked up. If you have a sound meter available, use it to perform sound checks during the shoot. The sound level should constantly stay at the middle range level. Avoid sound spikes above and below the mid-range level.</p>
+
+<p>Finally, many successful videos use trained readers for the dialogue, which you can find by calling acting schools or radio-stations. The final dialogue should have clear, enunciated words and the style should be neither too soft, slow, or fast. When you listen you will know when it is right. And turn off ALL mobile phones!</p>
+
+<h3>Editing</h3>
+
+<p>As best as you can edit the original raw footage or stills first in a rough cut and then iterate your cuts and transitions.</p>
+
+<h3>Capturing and Recording Information on Computer Screens</h3>
+
+<p>Because of incompatibilities of resolution, refresh rate, and interlacing, it is often difficult to get good shots of computer screens on video. You will probably need to experiment to find the best way of capturing screen images on video.</p>
+
+<p>Most people will film the screen with a camera. In this case, darken the room to enhance contrast, and set your white balance to match the white of the screen. If you have problems with one camera, you might consider borrowing or renting different cameras to see if you can obtain better results when shooting from the screen.</p>
+
+<p>If you are using screen capture software, make sure that it is able to capture the screen at a satisfactory frame rate and does not affect the performance of your application. Most software can capture the whole screen or a specific area such as a window. Since performance is often affected by the size of the area being captured, you should try to focus the capture on the area of interest. This will also reduce the artifacts if you later compress and rescale the image. Finally, remember that screen capture only captures the screen (!): you may want to add wider shots taken with a camcorder to show the user interacting with the system; you should also consider adding click sounds when the user clicks the mouse to make such interactions more explicit (some capture software can do that automatically).</p>
+
+<h2>Final thought</h2>
+
+<p>Making a video is hard work, but as any attendee of UIST will tell you — a good video is worth its weight in gold.</p>
+
+<h3> Footnotes </h3>
+
+<p id="footnote1">[1] Video are subject to ACM’s copyright policies.
+<br />
+Please review <a href="http://www.acm.org/publications/policies/copyright-policy">ACM’s Copyright and Permission Policy</a> and <a href="http://www.acm.org/publications/authors/third-party-material">ACM’s Requirements about 3rd party material</a>.</p>
+
+<p id="footnote2">[2] We do not endorse or are responsible for the use of any of the software mentioned in this guide.</p>
+
+<h2 id="questions">Questions?</h2>
+
+
+
+  <footer class="site-footer my-5"><span class="text-end">&copy; 2026 ACM SIGCHI.</span> Logo/iconography designed by <a
+                href="https://www.shuhong-hci.com">Shuhong Wang</a>. Detroit photography from <a
+                href="https://visitdetroit.com/">Visit Detroit</a>.</footer>
+</main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
