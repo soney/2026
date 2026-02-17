@@ -69,27 +69,34 @@
                         <span class="d-lg-none ms-2" id="bd-theme-text">Toggle theme</span>
                     </button>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
-                        <li class="dropdown-item" data-bs-theme-value="light" aria-pressed="false">
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-sun me-2 opacity-50 theme-icon" data-theme-icon="fa-sun"></i>
-                                Light
-                                <i class="fas fa-check ms-auto d-none"></i>
-                            </div>
+                        <li>
+                            <button class="dropdown-item" data-bs-theme-value="light" aria-pressed="false"
+                                type="button">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-sun me-2 opacity-50 theme-icon" data-theme-icon="fa-sun"></i>
+                                    Light
+                                    <i class="fas fa-check ms-auto d-none"></i>
+                                </div>
+                            </button>
                         </li>
-                        <li class="dropdown-item" data-bs-theme-value="dark" aria-pressed="false">
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-moon me-2 opacity-50 theme-icon" data-theme-icon="fa-moon"></i>
-                                Dark
-                                <i class="fas fa-check ms-auto d-none"></i>
-                            </div>
+                        <li>
+                            <button class="dropdown-item" data-bs-theme-value="dark" aria-pressed="false" type="button">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-moon me-2 opacity-50 theme-icon" data-theme-icon="fa-moon"></i>
+                                    Dark
+                                    <i class="fas fa-check ms-auto d-none"></i>
+                                </div>
+                            </button>
                         </li>
-                        <li class="dropdown-item" data-bs-theme-value="auto" aria-pressed="true">
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-circle-half-stroke me-2 opacity-50 theme-icon"
-                                    data-theme-icon="fa-circle-half-stroke"></i>
-                                Auto
-                                <i class="fas fa-check ms-auto d-none"></i>
-                            </div>
+                        <li>
+                            <button class="dropdown-item" data-bs-theme-value="auto" aria-pressed="true" type="button">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-circle-half-stroke me-2 opacity-50 theme-icon"
+                                        data-theme-icon="fa-circle-half-stroke"></i>
+                                    Auto
+                                    <i class="fas fa-check ms-auto d-none"></i>
+                                </div>
+                            </button>
                         </li>
                     </ul>
                 </li>
@@ -250,6 +257,50 @@
     }
   });
 </script>
+
+<!-- ══════════════════════════════════════════
+     Announcements (data-driven, 3 most recent)
+     ══════════════════════════════════════════ -->
+<!-- 
+
+
+
+
+
+
+<section class="announcements" id="announcements">
+    <div class="announcements__box">
+        <h3 class="announcements__heading">
+            <i class="fa-solid fa-bullhorn" aria-hidden="true"></i> Announcements
+        </h3>
+        <ul class="announcements__list">
+            
+            <li class="announcements__item">
+                <details class="announcements__details">
+                    <summary class="announcements__summary">
+                        <div class="announcements__summary-text">
+                            <span class="announcements__title">Page Limit Reintroduced for UIST 2026 Papers</span>
+                            
+                            <span class="announcements__preview">This year we have decided to reintroduce a fixed page limit for papers. The limit is 10 pages for standard length papers and 5 pages for short papers in the two-column format (excluding references and appendices). Papers that exceed the limit will be desk rejected.
+</span>
+                            
+                        </div>
+                        <span class="announcements__date">February 2026</span>
+                    </summary>
+                    <div class="announcements__expand">
+                        
+                        <p class="announcements__blurb">This year we have decided to reintroduce a fixed page limit for papers. The limit is <strong>10 pages</strong> for standard length papers and <strong>5 pages</strong> for short papers in the two-column format (excluding references and appendices). Papers that exceed the limit will be desk rejected.
+</p>
+                        
+                        
+                    </div>
+                </details>
+            </li>
+            
+        </ul>
+    </div>
+</section>
+ -->
 
 <!-- ══════════════════════════════════════════
      Key Info (visible without scrolling)
